@@ -16,20 +16,33 @@
   }
 }
 @-webkit-keyframes cloud-1-anim {
-  from {
-    left: 0;
+  0% {
+    top: 15px;
+    right: 90%;
   }
-  to {
-    left: 200px;
+  90% {
+    top: 5px;
+    right: -200px;
+  }
+  95% {
+    top: -200px;
+    right: 100%;
+  }
+  100% {
+    top: 0;
+    right: 100%;
   }
 }
 
 @-webkit-keyframes soleil-anim {
-  from {
+  0% {
     @include transform(rotateY(10deg));
   }
-  to {
-    @include transform(rotateY(20deg));
+  50% {
+    @include transform(rotateZ(-20deg) rotateY(40deg));
+  }
+  100% {
+    @include transform(rotateY(10deg));
   }
 }
 
@@ -55,45 +68,20 @@
     height: 210px;
     position: relative;
     overflow: hidden;
-    .cloud-1 {
+    img {
       position: absolute;
-      top: 0;
-      left: 0;
-      @include animation(cloud-1-anim 3s);
+      &.cloud-1 {
+        @include animation(cloud-1-anim 20s ease-in-out 0 infinite normal);
+      }
+      &.cloud-2 {}
+      &.cloud-3 {}
+      &.soleil {
+        width: 272px;
+        height: 265px;
+        top: 0;
+        right: 15px;
+        @include animation(soleil-anim 20s ease-in-out 0 infinite normal);
+      }
     }
-    .cloud-2 {}
-    .cloud-3 {}
-    .soleil {
-      width: 272px;
-      height: 265px;
-      -moz-animation-duration: 3s;
-      -webkit-animation-duration: 3s;
-      -moz-animation-name: soleil-anim;
-      -webkit-animation-name: soleil-anim;
-    }
-  }
-}
-
-@-moz-keyframes slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-  
-  to {
-    margin-left:0%;
-    width:100%;
-  }
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-  
-  to {
-    margin-left:0%;
-    width:100%;
   }
 }
