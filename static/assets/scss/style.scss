@@ -1,0 +1,38 @@
+
+@import 'modules/boilerplate';
+@import 'modules/bourbon/bourbon';
+@import 'partials/ie';
+@import 'partials/tophat';
+
+@import 'fonts/FellGreatPrimer';
+@include FellGreatPrimer;
+
+body {
+  background: #f4f2ed;
+  font-family: Georgia, serif;
+  color: #2B2124;
+}
+
+section.main {
+  text-align: center;
+  header.logo {
+    font-family: 'FellGreatPrimerRegular', Georgia, serif;
+    font-size: 7em;
+    margin: 150px auto 0;
+    width: 360px;
+    h1, h2 {
+      font-weight: normal;
+      text-align: left;
+      line-height: 0.8em;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-shadow: 1px 1px 0 #C9C4B1;
+    }
+    h2 {
+      font-size: 0.35em;
+      margin: 0 0 0 0.1em;
+    }
+  }
+}

@@ -1,39 +1,39 @@
-import json
-import bottle
-from bottle import Bottle, route, view, run, request, abort
-from pymongo import Connection
+from flask import Flask, request, render_template, request_started
+from flaskext.mongoengine import MongoEngine
+from flaskext.compass import Compass
 
-# Bottle init
-etherous = Bottle()
-bottle.debug(True)
+# Init
+etherous = Flask(__name__, template_folder = 'views')
+etherous.config.from_envvar('ETHEROUS_CONFIG')
 
 # DB Setup
-connection = Connection('localhost', 27017)
-db = connection.etherous
 
-@etherous.route('/')
-@view('main')
+# Routes
+@etherous.route("/")
 def main():
-  return {}
+  return render_template('main.jinja')
 
-@etherous.route('/documents', method = 'PUT')
-def put_document():
-  data = request.body.readline()
-  if not data:
-    abort(400, 'No data received')
-  entity = json.loads(data)
-  if not entity.has_key('_id'):
-    abort(400, 'No _id specified')
-  try:
-    db['documents'].save(entity)
-  except ValidationError as ve:
-    abort(400, str(ve))
-  
-@etherous.route('/documents/<id:int>', method = 'GET')
-def get_document(id):
-  entity = db['documents'].find_one({'_id':id})
-  if not entity:
-    abort(404, 'No document with id %s' % id)
-  return entity
+# Debug logic
+if etherous.config['DEBUG']:
 
-run(etherous, host = 'localhost', port = 8080, reloader = True)
+  import os
+
+  # Serve static content 
+  from werkzeug import SharedDataMiddleware
+  etherous.wsgi_app = SharedDataMiddleware(etherous.wsgi_app, {
+    '/': os.path.join(os.path.dirname(__file__), 'static')
+  })
+
+  # Logging
+  import logging
+  from logging import FileHandler
+  file_handler = FileHandler(etherous.config['LOG_FILE'])
+  file_handler.setLevel(logging.WARNING)
+  etherous.logger.addHandler(file_handler)
+
+# Compass
+compass = Compass(etherous)
+
+# Run debug server
+if __name__ == "__main__":
+  etherous.run()
