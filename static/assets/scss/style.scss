@@ -16,6 +16,7 @@ body {
 
 section.main {
   text-align: center;
+  position: relative;
   header.logo {
     font-family: 'FellGreatPrimerRegular', Georgia, serif;
     font-size: 7em;
@@ -29,6 +30,7 @@ section.main {
       padding: 0;
     }
     h1 {
+      font-size: 1em;
       text-shadow: 1px 1px 0 #C9C4B1;
     }
     h2 {

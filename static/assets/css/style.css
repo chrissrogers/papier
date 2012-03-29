@@ -364,58 +364,272 @@ td {
   src: url(/assets/fonts/imfegprm29p-webfont.eot) format('embedded-opentype'), url(/assets/fonts/imfegprm29p-webfont.eot?#iefix) format('embedded-opentype'), url(/assets/fonts/imfegprm29p-webfont.woff) format('woff'), url(/assets/fonts/imfegprm29p-webfont.ttf) format('truetype'), url(/assets/css/fonts/imfegprm29p-webfont.svg#IMFELLGreatPrimerRegular) format('svg');
 }
 
-@keyframes cloud-1-anim {
-  /* line 3, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  from {
-    left: 0;
-  }
-
-  /* line 6, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  to {
-    left: 200px;
-  }
-}
-
 @-moz-keyframes cloud-1-anim {
-  /* line 11, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  from {
-    left: 0;
+  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    top: 40px;
+    right: 90%;
   }
 
-  /* line 14, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  to {
-    left: 200px;
+  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  20% {
+    top: -20px;
+  }
+
+  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  35% {
+    top: 20px;
+  }
+
+  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  60% {
+    top: -50px;
+  }
+
+  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  80% {
+    top: -200px;
+    right: -20%;
+  }
+
+  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  81% {
+    top: -200px;
+    right: 120%;
+  }
+
+  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  82% {
+    top: 20px;
+    right: 120%;
+  }
+
+  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    top: 40px;
+    right: 90%;
   }
 }
 
 @-webkit-keyframes cloud-1-anim {
-  /* line 19, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
   0% {
-    top: 15px;
+    top: 40px;
     right: 90%;
   }
 
-  /* line 23, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  90% {
-    top: 5px;
-    right: -200px;
+  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  20% {
+    top: -20px;
   }
 
-  /* line 27, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
-  95% {
+  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  35% {
+    top: 20px;
+  }
+
+  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  60% {
+    top: -50px;
+  }
+
+  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  80% {
     top: -200px;
-    right: 100%;
+    right: -20%;
   }
 
-  /* line 31, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  81% {
+    top: -200px;
+    right: 120%;
+  }
+
+  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  82% {
+    top: 20px;
+    right: 120%;
+  }
+
+  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
   100% {
-    top: 0;
-    right: 100%;
+    top: 40px;
+    right: 90%;
+  }
+}
+
+@-o-keyframes cloud-1-anim {
+  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    top: 40px;
+    right: 90%;
+  }
+
+  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  20% {
+    top: -20px;
+  }
+
+  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  35% {
+    top: 20px;
+  }
+
+  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  60% {
+    top: -50px;
+  }
+
+  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  80% {
+    top: -200px;
+    right: -20%;
+  }
+
+  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  81% {
+    top: -200px;
+    right: 120%;
+  }
+
+  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  82% {
+    top: 20px;
+    right: 120%;
+  }
+
+  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    top: 40px;
+    right: 90%;
+  }
+}
+
+@-ms-keyframes cloud-1-anim {
+  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    top: 40px;
+    right: 90%;
+  }
+
+  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  20% {
+    top: -20px;
+  }
+
+  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  35% {
+    top: 20px;
+  }
+
+  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  60% {
+    top: -50px;
+  }
+
+  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  80% {
+    top: -200px;
+    right: -20%;
+  }
+
+  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  81% {
+    top: -200px;
+    right: 120%;
+  }
+
+  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  82% {
+    top: 20px;
+    right: 120%;
+  }
+
+  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    top: 40px;
+    right: 90%;
+  }
+}
+
+@keyframes cloud-1-anim {
+  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    top: 40px;
+    right: 90%;
+  }
+
+  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  20% {
+    top: -20px;
+  }
+
+  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  35% {
+    top: 20px;
+  }
+
+  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  60% {
+    top: -50px;
+  }
+
+  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  80% {
+    top: -200px;
+    right: -20%;
+  }
+
+  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  81% {
+    top: -200px;
+    right: 120%;
+  }
+
+  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  82% {
+    top: 20px;
+    right: 120%;
+  }
+
+  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    top: 40px;
+    right: 90%;
+  }
+}
+
+@-moz-keyframes soleil-anim {
+  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateZ(-30deg) rotateY(40deg);
+    -moz-transform: rotateZ(-30deg) rotateY(40deg);
+    -ms-transform: rotateZ(-30deg) rotateY(40deg);
+    -o-transform: rotateZ(-30deg) rotateY(40deg);
+    transform: rotateZ(-30deg) rotateY(40deg);
+  }
+
+  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
   }
 }
 
 @-webkit-keyframes soleil-anim {
-  /* line 38, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -424,16 +638,16 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 41, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
   50% {
-    -webkit-transform: rotateZ(-20deg) rotateY(40deg);
-    -moz-transform: rotateZ(-20deg) rotateY(40deg);
-    -ms-transform: rotateZ(-20deg) rotateY(40deg);
-    -o-transform: rotateZ(-20deg) rotateY(40deg);
-    transform: rotateZ(-20deg) rotateY(40deg);
+    -webkit-transform: rotateZ(-30deg) rotateY(40deg);
+    -moz-transform: rotateZ(-30deg) rotateY(40deg);
+    -ms-transform: rotateZ(-30deg) rotateY(40deg);
+    -o-transform: rotateZ(-30deg) rotateY(40deg);
+    transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 44, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -443,45 +657,139 @@ td {
   }
 }
 
-/* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+@-o-keyframes soleil-anim {
+  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateZ(-30deg) rotateY(40deg);
+    -moz-transform: rotateZ(-30deg) rotateY(40deg);
+    -ms-transform: rotateZ(-30deg) rotateY(40deg);
+    -o-transform: rotateZ(-30deg) rotateY(40deg);
+    transform: rotateZ(-30deg) rotateY(40deg);
+  }
+
+  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@-ms-keyframes soleil-anim {
+  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateZ(-30deg) rotateY(40deg);
+    -moz-transform: rotateZ(-30deg) rotateY(40deg);
+    -ms-transform: rotateZ(-30deg) rotateY(40deg);
+    -o-transform: rotateZ(-30deg) rotateY(40deg);
+    transform: rotateZ(-30deg) rotateY(40deg);
+  }
+
+  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@keyframes soleil-anim {
+  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateZ(-30deg) rotateY(40deg);
+    -moz-transform: rotateZ(-30deg) rotateY(40deg);
+    -ms-transform: rotateZ(-30deg) rotateY(40deg);
+    -o-transform: rotateZ(-30deg) rotateY(40deg);
+    transform: rotateZ(-30deg) rotateY(40deg);
+  }
+
+  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+/* line 48, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 54, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors div {
   float: left;
   height: 10px;
   width: 20%;
 }
-/* line 60, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 59, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 61, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 60, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 62, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 61, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 63, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 62, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 64, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 63, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-5 {
   background: #83555E;
 }
-/* line 66, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 65, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation {
   width: 100%;
-  height: 210px;
+  height: 240px;
   position: relative;
   overflow: hidden;
+  background-color: #f4f2ed;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f2ed), color-stop(100%, #efece8));
+  background-image: -webkit-linear-gradient(90deg, #f4f2ed 50%, #efece8);
+  background-image: -moz-linear-gradient(90deg, #f4f2ed 50%, #efece8);
+  background-image: -ms-linear-gradient(90deg, #f4f2ed 50%, #efece8);
+  background-image: -o-linear-gradient(90deg, #f4f2ed 50%, #efece8);
+  background-image: linear-gradient(90deg, #f4f2ed 50%, #efece8);
 }
 /* line 71, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img {
@@ -489,19 +797,21 @@ td {
 }
 /* line 73, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img.cloud-1 {
-  -webkit-animation: cloud-1-anim 20s ease-in-out 0 infinite normal;
-  -moz-animation: cloud-1-anim 20s ease-in-out 0 infinite normal;
-  animation: cloud-1-anim 20s ease-in-out 0 infinite normal;
+  -webkit-animation: cloud-1-anim 120s linear 0 infinite normal;
+  -moz-animation: cloud-1-anim 120s linear 0 infinite normal;
+  -ms-animation: cloud-1-anim 120s linear 0 infinite normal;
+  animation: cloud-1-anim 120s linear 0 infinite normal;
 }
 /* line 78, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img.soleil {
-  width: 272px;
-  height: 265px;
-  top: 0;
-  right: 15px;
-  -webkit-animation: soleil-anim 20s ease-in-out 0 infinite normal;
-  -moz-animation: soleil-anim 20s ease-in-out 0 infinite normal;
-  animation: soleil-anim 20s ease-in-out 0 infinite normal;
+  width: 149px;
+  height: 145px;
+  top: 20px;
+  right: 20%;
+  -webkit-animation: soleil-anim 20s ease-out 0 infinite normal;
+  -moz-animation: soleil-anim 20s ease-out 0 infinite normal;
+  -ms-animation: soleil-anim 20s ease-out 0 infinite normal;
+  animation: soleil-anim 20s ease-out 0 infinite normal;
 }
 
 /* line 11, ../scss/style.scss */
@@ -514,15 +824,16 @@ body {
 /* line 17, ../scss/style.scss */
 section.main {
   text-align: center;
+  position: relative;
 }
-/* line 19, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 section.main header.logo {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
   font-size: 7em;
   margin: 150px auto 0;
   width: 360px;
 }
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 section.main header.logo h1, section.main header.logo h2 {
   font-weight: normal;
   text-align: left;
@@ -530,11 +841,12 @@ section.main header.logo h1, section.main header.logo h2 {
   margin: 0;
   padding: 0;
 }
-/* line 31, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 section.main header.logo h1 {
+  font-size: 1em;
   text-shadow: 1px 1px 0 #C9C4B1;
 }
-/* line 34, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 section.main header.logo h2 {
   font-size: 0.35em;
   margin: 0 0 0 0.1em;
