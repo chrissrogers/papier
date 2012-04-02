@@ -744,40 +744,185 @@ td {
   }
 }
 
-/* line 48, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+@-moz-keyframes twine-1-anim {
+  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateY(40deg);
+    -moz-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    -o-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+  }
+
+  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@-webkit-keyframes twine-1-anim {
+  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateY(40deg);
+    -moz-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    -o-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+  }
+
+  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@-o-keyframes twine-1-anim {
+  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateY(40deg);
+    -moz-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    -o-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+  }
+
+  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@-ms-keyframes twine-1-anim {
+  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateY(40deg);
+    -moz-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    -o-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+  }
+
+  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+@keyframes twine-1-anim {
+  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  0% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+
+  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  50% {
+    -webkit-transform: rotateY(40deg);
+    -moz-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    -o-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+  }
+
+  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  100% {
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+}
+
+/* line 60, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 54, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 66, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors div {
   float: left;
   height: 10px;
   width: 20%;
 }
-/* line 59, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 71, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 60, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 72, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 61, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 73, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 62, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 74, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 63, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 75, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-5 {
   background: #83555E;
 }
-/* line 65, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 77, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation {
   width: 100%;
   height: 240px;
@@ -791,18 +936,18 @@ td {
   background-image: -o-linear-gradient(90deg, #f4f2ed 50%, #efece8);
   background-image: linear-gradient(90deg, #f4f2ed 50%, #efece8);
 }
-/* line 71, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 83, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img {
   position: absolute;
 }
-/* line 73, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 85, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img.cloud-1 {
   -webkit-animation: cloud-1-anim 120s linear 0 infinite normal;
   -moz-animation: cloud-1-anim 120s linear 0 infinite normal;
   -ms-animation: cloud-1-anim 120s linear 0 infinite normal;
   animation: cloud-1-anim 120s linear 0 infinite normal;
 }
-/* line 78, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 90, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
 .tophat .tophat-animation img.soleil {
   width: 149px;
   height: 145px;
@@ -813,6 +958,17 @@ td {
   -ms-animation: soleil-anim 20s ease-out 0 infinite normal;
   animation: soleil-anim 20s ease-out 0 infinite normal;
 }
+/* line 97, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+.tophat .tophat-animation img.twine-1 {
+  width: 19px;
+  height: 311px;
+  top: -220px;
+  right: 25%;
+  -webkit-animation: twine-1-anim 20s ease-out 0 infinite normal;
+  -moz-animation: twine-1-anim 20s ease-out 0 infinite normal;
+  -ms-animation: twine-1-anim 20s ease-out 0 infinite normal;
+  animation: twine-1-anim 20s ease-out 0 infinite normal;
+}
 
 /* line 11, ../scss/style.scss */
 body {
@@ -822,32 +978,75 @@ body {
 }
 
 /* line 17, ../scss/style.scss */
-section.main {
+a {
+  color: #93737A;
+  border-bottom: 1px dashed #C1B6B9;
+  cursor: pointer;
+}
+/* line 21, ../scss/style.scss */
+a:hover {
+  color: #83555E;
+  border-bottom: 1px solid #C1B6B9;
+}
+
+/* line 28, ../scss/style.scss */
+section.main.layout-centered {
+  text-align: center;
+}
+/* line 30, ../scss/style.scss */
+section.main.layout-centered section.layout-inner {
+  margin: 0 auto;
+  width: 950px;
+  text-align: left;
+}
+
+/* line 38, ../scss/style.scss */
+section.logo {
   text-align: center;
   position: relative;
 }
-/* line 20, ../scss/style.scss */
-section.main header.logo {
+/* line 41, ../scss/style.scss */
+section.logo header {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
   font-size: 7em;
   margin: 150px auto 0;
   width: 360px;
 }
-/* line 25, ../scss/style.scss */
-section.main header.logo h1, section.main header.logo h2 {
+/* line 46, ../scss/style.scss */
+section.logo header h1, section.logo header h2 {
   font-weight: normal;
   text-align: left;
   line-height: 0.8em;
   margin: 0;
   padding: 0;
 }
-/* line 32, ../scss/style.scss */
-section.main header.logo h1 {
+/* line 53, ../scss/style.scss */
+section.logo header h1 {
   font-size: 1em;
   text-shadow: 1px 1px 0 #C9C4B1;
 }
-/* line 36, ../scss/style.scss */
-section.main header.logo h2 {
-  font-size: 0.35em;
+/* line 57, ../scss/style.scss */
+section.logo header h2 {
+  font-size: 0.3em;
   margin: 0 0 0 0.1em;
+}
+
+/* line 64, ../scss/style.scss */
+section.lemme-introduce-myself {
+  font-family: 'FellGreatPrimerRegular', Georgia, serif;
+}
+/* line 66, ../scss/style.scss */
+section.lemme-introduce-myself p.etherous-is-easy {
+  font-size: 2.5em;
+  margin: 2em 0;
+}
+/* line 70, ../scss/style.scss */
+section.lemme-introduce-myself section.silly-story {
+  font-size: 1.35em;
+  line-height: 1.9em;
+}
+/* line 73, ../scss/style.scss */
+section.lemme-introduce-myself section.silly-story img.the-silly-story-begins {
+  float: left;
+  margin: 0 0.5em 0.5em 0;
 }

@@ -1,0 +1,4 @@
+Flask>=0.8
+Flask-Compass>=0.2
+mongoengine>=0.6.2
+https://github.com/sbook/flask-mongoengine/tarball/master

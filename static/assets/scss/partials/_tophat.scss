@@ -45,6 +45,18 @@
   }
 }
 
+@include keyframes(twine-1-anim) {
+  0% {
+    @include transform(rotateY(10deg));
+  }
+  50% {
+    @include transform(rotateY(40deg));
+  }
+  100% {
+    @include transform(rotateY(10deg));
+  }
+}
+
 .tophat {
   position: absolute;
   top: 0;
@@ -81,6 +93,13 @@
         top: 20px;
         right: 20%;
         @include animation(soleil-anim 20s ease-out 0 infinite normal);
+      }
+      &.twine-1 {
+        width: 19px;
+        height: 311px;
+        top: -220px;
+        right: 25%;
+        @include animation(twine-1-anim 20s ease-out 0 infinite normal);
       }
     }
   }
