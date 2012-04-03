@@ -1,0 +1,78 @@
+
+@import 'compass/css3';
+@import 'modules/html5boilerplate';
+@import 'modules/bourbon/bourbon';
+
+@include font-face('FellGreatPrimerRegular', font-files('/assets/fonts/imfegprm29p-webfont.eot', '/assets/fonts/imfegprm29p-webfont.eot?#iefix', '/assets/fonts/imfegprm29p-webfont.woff', '/assets/fonts/imfegprm29p-webfont.ttf', '/assets/css/fonts/imfegprm29p-webfont.svg#IMFELLGreatPrimerRegular'));
+
+@import 'partials/ie';
+@import 'partials/tophat';
+
+body {
+  background: #f4f2ed;
+  font-family: Georgia, serif;
+  color: #2B2124;
+}
+
+a {
+  color: #93737A;
+  border-bottom: 1px dashed #C1B6B9;
+  cursor: pointer;
+  &:hover {
+    color: #83555E;
+    border-bottom: 1px solid #C1B6B9;
+  }
+}
+
+section.main {
+  &.layout-centered {
+    text-align: center;
+    section.layout-inner {
+      margin: 0 auto;
+      width: 950px;
+      text-align: left;
+    }
+  }
+}
+
+section.logo {
+  text-align: center;
+  position: relative;
+  header {
+    font-family: 'FellGreatPrimerRegular', Georgia, serif;
+    font-size: 7em;
+    margin: 150px auto 0;
+    width: 360px;
+    h1, h2 {
+      font-weight: normal;
+      text-align: left;
+      line-height: 0.8em;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 1em;
+      text-shadow: 1px 1px 0 #C9C4B1;
+    }
+    h2 {
+      font-size: 0.3em;
+      margin: 0 0 0 0.1em;
+    }
+  }
+}
+
+section.lemme-introduce-myself {
+  font-family: 'FellGreatPrimerRegular', Georgia, serif;
+  p.etherous-is-easy {
+    font-size: 2.5em;
+    margin: 2em 0;
+  }
+  section.silly-story {
+    font-size: 1.35em;
+    line-height: 1.9em;
+    img.the-silly-story-begins {
+      float: left;
+      margin: 0 0.5em 0.5em 0;
+    }
+  }
+}

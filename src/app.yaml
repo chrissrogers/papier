@@ -1,0 +1,38 @@
+application: etherous-app
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "5d"
+
+builtins:
+- appstats: on
+- datastore_admin: on
+- deferred: on
+- remote_api: on
+
+inbound_services:
+- warmup
+
+handlers:
+- url: /favicon.ico
+  static_files: etherous/static/img/icons/favicon.ico
+  upload: etherous/static/img/icons/favicon.ico
+
+- url: /crossdomain.xml
+  static_files: etherous/static/crossdomain.xml
+  upload: etherous/static/crossdomain.xml
+
+- url: /humans.txt
+  static_files: etherous/static/humans.txt
+  upload: etherous/static/humans.txt
+
+- url: /robots.txt
+  static_files: etherous/static/robots.txt
+  upload: etherous/static/robots.txt
+
+- url: /assets
+  static_dir: etherous/static/assets
+
+- url: .*
+  script: main.py
