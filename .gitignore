@@ -1,1 +1,2 @@
-config/compass/.sass-cache/
+secret_keys.py
+*.pyc
