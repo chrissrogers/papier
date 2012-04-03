@@ -16,8 +16,8 @@ inbound_services:
 
 handlers:
 - url: /favicon.ico
-  static_files: etherous/static/img/icons/favicon.ico
-  upload: etherous/static/img/icons/favicon.ico
+  static_files: etherous/static/assets/img/icons/favicon.ico
+  upload: etherous/static/assets/img/icons/favicon.ico
 
 - url: /crossdomain.xml
   static_files: etherous/static/crossdomain.xml
