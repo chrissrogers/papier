@@ -1,29 +1,29 @@
 /* HTML5 Boilerplate
  * ==|== normalize.css ==========================================================
  */
-/* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 5, ../scss/modules/_html5boilerplate.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 6, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 6, ../scss/modules/_html5boilerplate.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 7, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 7, ../scss/modules/_html5boilerplate.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 8, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 8, ../scss/modules/_html5boilerplate.scss */
 [hidden] {
   display: none;
 }
 
-/* line 10, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 10, ../scss/modules/_html5boilerplate.scss */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -31,79 +31,79 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 11, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 11, ../scss/modules/_html5boilerplate.scss */
 body {
   margin: 0;
   font-size: 13px;
   line-height: 1.231;
 }
 
-/* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 12, ../scss/modules/_html5boilerplate.scss */
 body, button, input, select, textarea {
   font-family: sans-serif;
   color: #222;
 }
 
-/* line 14, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 14, ../scss/modules/_html5boilerplate.scss */
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 15, ../scss/modules/_html5boilerplate.scss */
 ::selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 17, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 17, ../scss/modules/_html5boilerplate.scss */
 a {
   color: #00e;
 }
 
-/* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 18, ../scss/modules/_html5boilerplate.scss */
 a:visited {
   color: #551a8b;
 }
 
-/* line 19, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 19, ../scss/modules/_html5boilerplate.scss */
 a:hover {
   color: #06e;
 }
 
-/* line 20, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 20, ../scss/modules/_html5boilerplate.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 21, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 21, ../scss/modules/_html5boilerplate.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 23, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 23, ../scss/modules/_html5boilerplate.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 24, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 24, ../scss/modules/_html5boilerplate.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 25, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 25, ../scss/modules/_html5boilerplate.scss */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 26, ../scss/modules/_html5boilerplate.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 27, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 27, ../scss/modules/_html5boilerplate.scss */
 hr {
   display: block;
   height: 1px;
@@ -113,14 +113,14 @@ hr {
   padding: 0;
 }
 
-/* line 28, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 28, ../scss/modules/_html5boilerplate.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 29, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 29, ../scss/modules/_html5boilerplate.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -128,37 +128,37 @@ mark {
   font-weight: bold;
 }
 
-/* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 30, ../scss/modules/_html5boilerplate.scss */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
-/* line 31, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 31, ../scss/modules/_html5boilerplate.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 32, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 32, ../scss/modules/_html5boilerplate.scss */
 q {
   quotes: none;
 }
 
-/* line 33, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 33, ../scss/modules/_html5boilerplate.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 34, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 34, ../scss/modules/_html5boilerplate.scss */
 small {
   font-size: 85%;
 }
 
-/* line 35, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 35, ../scss/modules/_html5boilerplate.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -166,28 +166,28 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 36, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 36, ../scss/modules/_html5boilerplate.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 37, ../scss/modules/_html5boilerplate.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 38, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 38, ../scss/modules/_html5boilerplate.scss */
 ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 39, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 39, ../scss/modules/_html5boilerplate.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 40, ../scss/modules/_html5boilerplate.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -195,48 +195,48 @@ nav ul, nav ol {
   padding: 0;
 }
 
-/* line 41, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 41, ../scss/modules/_html5boilerplate.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 42, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 42, ../scss/modules/_html5boilerplate.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 43, ../scss/modules/_html5boilerplate.scss */
 figure {
   margin: 0;
 }
 
-/* line 45, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 45, ../scss/modules/_html5boilerplate.scss */
 form {
   margin: 0;
 }
 
-/* line 46, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 46, ../scss/modules/_html5boilerplate.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 47, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 47, ../scss/modules/_html5boilerplate.scss */
 label {
   cursor: pointer;
 }
 
-/* line 48, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 48, ../scss/modules/_html5boilerplate.scss */
 legend {
   border: 0;
   *margin-left: -7px;
   padding: 0;
 }
 
-/* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 49, ../scss/modules/_html5boilerplate.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -244,29 +244,29 @@ button, input, select, textarea {
   *vertical-align: middle;
 }
 
-/* line 50, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 50, ../scss/modules/_html5boilerplate.scss */
 button, input {
   line-height: normal;
   *overflow: visible;
 }
 
-/* line 51, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 51, ../scss/modules/_html5boilerplate.scss */
 table button, table input {
   *overflow: auto;
 }
 
-/* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 52, ../scss/modules/_html5boilerplate.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
 }
 
-/* line 53, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 53, ../scss/modules/_html5boilerplate.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
 }
 
-/* line 54, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 54, ../scss/modules/_html5boilerplate.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -274,42 +274,42 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 55, ../scss/modules/_html5boilerplate.scss */
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 56, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 56, ../scss/modules/_html5boilerplate.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 57, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 57, ../scss/modules/_html5boilerplate.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 59, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 59, ../scss/modules/_html5boilerplate.scss */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 61, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 61, ../scss/modules/_html5boilerplate.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 62, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 62, ../scss/modules/_html5boilerplate.scss */
 td {
   vertical-align: top;
 }
 
 /* ==|== non-semantic helper classes ======================================== */
-/* line 65, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 65, ../scss/modules/_html5boilerplate.scss */
 .ir {
   display: block;
   border: 0;
@@ -321,18 +321,18 @@ td {
   direction: ltr;
 }
 
-/* line 66, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 66, ../scss/modules/_html5boilerplate.scss */
 .ir br {
   display: none;
 }
 
-/* line 67, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 67, ../scss/modules/_html5boilerplate.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 68, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 68, ../scss/modules/_html5boilerplate.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -344,7 +344,7 @@ td {
   width: 1px;
 }
 
-/* line 69, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 69, ../scss/modules/_html5boilerplate.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -354,7 +354,7 @@ td {
   width: auto;
 }
 
-/* line 70, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/modules/_html5boilerplate.scss */
+/* line 70, ../scss/modules/_html5boilerplate.scss */
 .invisible {
   visibility: hidden;
 }
@@ -365,46 +365,46 @@ td {
 }
 
 @-moz-keyframes cloud-1-anim {
-  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, ../scss/partials/_tophat.scss */
   0% {
     top: 40px;
     right: 90%;
   }
 
-  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 9, ../scss/partials/_tophat.scss */
   20% {
     top: -20px;
   }
 
-  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 12, ../scss/partials/_tophat.scss */
   35% {
     top: 20px;
   }
 
-  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 15, ../scss/partials/_tophat.scss */
   60% {
     top: -50px;
   }
 
-  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 18, ../scss/partials/_tophat.scss */
   80% {
     top: -200px;
     right: -20%;
   }
 
-  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, ../scss/partials/_tophat.scss */
   81% {
     top: -200px;
     right: 120%;
   }
 
-  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 26, ../scss/partials/_tophat.scss */
   82% {
     top: 20px;
     right: 120%;
   }
 
-  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 30, ../scss/partials/_tophat.scss */
   100% {
     top: 40px;
     right: 90%;
@@ -412,46 +412,46 @@ td {
 }
 
 @-webkit-keyframes cloud-1-anim {
-  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, ../scss/partials/_tophat.scss */
   0% {
     top: 40px;
     right: 90%;
   }
 
-  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 9, ../scss/partials/_tophat.scss */
   20% {
     top: -20px;
   }
 
-  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 12, ../scss/partials/_tophat.scss */
   35% {
     top: 20px;
   }
 
-  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 15, ../scss/partials/_tophat.scss */
   60% {
     top: -50px;
   }
 
-  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 18, ../scss/partials/_tophat.scss */
   80% {
     top: -200px;
     right: -20%;
   }
 
-  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, ../scss/partials/_tophat.scss */
   81% {
     top: -200px;
     right: 120%;
   }
 
-  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 26, ../scss/partials/_tophat.scss */
   82% {
     top: 20px;
     right: 120%;
   }
 
-  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 30, ../scss/partials/_tophat.scss */
   100% {
     top: 40px;
     right: 90%;
@@ -459,46 +459,46 @@ td {
 }
 
 @-o-keyframes cloud-1-anim {
-  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, ../scss/partials/_tophat.scss */
   0% {
     top: 40px;
     right: 90%;
   }
 
-  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 9, ../scss/partials/_tophat.scss */
   20% {
     top: -20px;
   }
 
-  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 12, ../scss/partials/_tophat.scss */
   35% {
     top: 20px;
   }
 
-  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 15, ../scss/partials/_tophat.scss */
   60% {
     top: -50px;
   }
 
-  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 18, ../scss/partials/_tophat.scss */
   80% {
     top: -200px;
     right: -20%;
   }
 
-  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, ../scss/partials/_tophat.scss */
   81% {
     top: -200px;
     right: 120%;
   }
 
-  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 26, ../scss/partials/_tophat.scss */
   82% {
     top: 20px;
     right: 120%;
   }
 
-  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 30, ../scss/partials/_tophat.scss */
   100% {
     top: 40px;
     right: 90%;
@@ -506,46 +506,46 @@ td {
 }
 
 @-ms-keyframes cloud-1-anim {
-  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, ../scss/partials/_tophat.scss */
   0% {
     top: 40px;
     right: 90%;
   }
 
-  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 9, ../scss/partials/_tophat.scss */
   20% {
     top: -20px;
   }
 
-  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 12, ../scss/partials/_tophat.scss */
   35% {
     top: 20px;
   }
 
-  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 15, ../scss/partials/_tophat.scss */
   60% {
     top: -50px;
   }
 
-  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 18, ../scss/partials/_tophat.scss */
   80% {
     top: -200px;
     right: -20%;
   }
 
-  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, ../scss/partials/_tophat.scss */
   81% {
     top: -200px;
     right: 120%;
   }
 
-  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 26, ../scss/partials/_tophat.scss */
   82% {
     top: 20px;
     right: 120%;
   }
 
-  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 30, ../scss/partials/_tophat.scss */
   100% {
     top: 40px;
     right: 90%;
@@ -553,46 +553,46 @@ td {
 }
 
 @keyframes cloud-1-anim {
-  /* line 5, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 5, ../scss/partials/_tophat.scss */
   0% {
     top: 40px;
     right: 90%;
   }
 
-  /* line 9, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 9, ../scss/partials/_tophat.scss */
   20% {
     top: -20px;
   }
 
-  /* line 12, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 12, ../scss/partials/_tophat.scss */
   35% {
     top: 20px;
   }
 
-  /* line 15, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 15, ../scss/partials/_tophat.scss */
   60% {
     top: -50px;
   }
 
-  /* line 18, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 18, ../scss/partials/_tophat.scss */
   80% {
     top: -200px;
     right: -20%;
   }
 
-  /* line 22, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 22, ../scss/partials/_tophat.scss */
   81% {
     top: -200px;
     right: 120%;
   }
 
-  /* line 26, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 26, ../scss/partials/_tophat.scss */
   82% {
     top: 20px;
     right: 120%;
   }
 
-  /* line 30, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 30, ../scss/partials/_tophat.scss */
   100% {
     top: 40px;
     right: 90%;
@@ -600,7 +600,7 @@ td {
 }
 
 @-moz-keyframes soleil-anim {
-  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -609,7 +609,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateZ(-30deg) rotateY(40deg);
     -moz-transform: rotateZ(-30deg) rotateY(40deg);
@@ -618,7 +618,7 @@ td {
     transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -629,7 +629,7 @@ td {
 }
 
 @-webkit-keyframes soleil-anim {
-  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -638,7 +638,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateZ(-30deg) rotateY(40deg);
     -moz-transform: rotateZ(-30deg) rotateY(40deg);
@@ -647,7 +647,7 @@ td {
     transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -658,7 +658,7 @@ td {
 }
 
 @-o-keyframes soleil-anim {
-  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -667,7 +667,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateZ(-30deg) rotateY(40deg);
     -moz-transform: rotateZ(-30deg) rotateY(40deg);
@@ -676,7 +676,7 @@ td {
     transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -687,7 +687,7 @@ td {
 }
 
 @-ms-keyframes soleil-anim {
-  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -696,7 +696,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateZ(-30deg) rotateY(40deg);
     -moz-transform: rotateZ(-30deg) rotateY(40deg);
@@ -705,7 +705,7 @@ td {
     transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -716,7 +716,7 @@ td {
 }
 
 @keyframes soleil-anim {
-  /* line 37, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 37, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -725,7 +725,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 40, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 40, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateZ(-30deg) rotateY(40deg);
     -moz-transform: rotateZ(-30deg) rotateY(40deg);
@@ -734,7 +734,7 @@ td {
     transform: rotateZ(-30deg) rotateY(40deg);
   }
 
-  /* line 43, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 43, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -745,7 +745,7 @@ td {
 }
 
 @-moz-keyframes twine-1-anim {
-  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 49, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -754,7 +754,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 52, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateY(40deg);
     -moz-transform: rotateY(40deg);
@@ -763,7 +763,7 @@ td {
     transform: rotateY(40deg);
   }
 
-  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 55, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -774,7 +774,7 @@ td {
 }
 
 @-webkit-keyframes twine-1-anim {
-  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 49, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -783,7 +783,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 52, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateY(40deg);
     -moz-transform: rotateY(40deg);
@@ -792,7 +792,7 @@ td {
     transform: rotateY(40deg);
   }
 
-  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 55, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -803,7 +803,7 @@ td {
 }
 
 @-o-keyframes twine-1-anim {
-  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 49, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -812,7 +812,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 52, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateY(40deg);
     -moz-transform: rotateY(40deg);
@@ -821,7 +821,7 @@ td {
     transform: rotateY(40deg);
   }
 
-  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 55, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -832,7 +832,7 @@ td {
 }
 
 @-ms-keyframes twine-1-anim {
-  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 49, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -841,7 +841,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 52, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateY(40deg);
     -moz-transform: rotateY(40deg);
@@ -850,7 +850,7 @@ td {
     transform: rotateY(40deg);
   }
 
-  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 55, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -861,7 +861,7 @@ td {
 }
 
 @keyframes twine-1-anim {
-  /* line 49, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 49, ../scss/partials/_tophat.scss */
   0% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -870,7 +870,7 @@ td {
     transform: rotateY(10deg);
   }
 
-  /* line 52, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 52, ../scss/partials/_tophat.scss */
   50% {
     -webkit-transform: rotateY(40deg);
     -moz-transform: rotateY(40deg);
@@ -879,7 +879,7 @@ td {
     transform: rotateY(40deg);
   }
 
-  /* line 55, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+  /* line 55, ../scss/partials/_tophat.scss */
   100% {
     -webkit-transform: rotateY(10deg);
     -moz-transform: rotateY(10deg);
@@ -889,40 +889,40 @@ td {
   }
 }
 
-/* line 60, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 60, ../scss/partials/_tophat.scss */
 .tophat {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 66, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 66, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors div {
   float: left;
   height: 10px;
   width: 20%;
 }
-/* line 71, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 71, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 72, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 72, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 73, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 73, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 74, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 74, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 75, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 75, ../scss/partials/_tophat.scss */
 .tophat .tophat-colors .color-5 {
   background: #83555E;
 }
-/* line 77, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 77, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation {
   width: 100%;
   height: 240px;
@@ -936,18 +936,18 @@ td {
   background-image: -o-linear-gradient(90deg, #f4f2ed 50%, #efece8);
   background-image: linear-gradient(90deg, #f4f2ed 50%, #efece8);
 }
-/* line 83, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 83, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img {
   position: absolute;
 }
-/* line 85, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 85, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.cloud-1 {
   -webkit-animation: cloud-1-anim 120s linear 0 infinite normal;
   -moz-animation: cloud-1-anim 120s linear 0 infinite normal;
   -ms-animation: cloud-1-anim 120s linear 0 infinite normal;
   animation: cloud-1-anim 120s linear 0 infinite normal;
 }
-/* line 90, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 90, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.soleil {
   width: 149px;
   height: 145px;
@@ -958,7 +958,7 @@ td {
   -ms-animation: soleil-anim 20s ease-out 0 infinite normal;
   animation: soleil-anim 20s ease-out 0 infinite normal;
 }
-/* line 97, /Users/chrisrogers/Development/Projects/etherous/static/assets/scss/partials/_tophat.scss */
+/* line 97, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.twine-1 {
   width: 19px;
   height: 311px;
