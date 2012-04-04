@@ -12,8 +12,6 @@
 
 etherous runs on the [Google App Engine](https://developers.google.com/appengine)
 
----------------------------------------
-
 ## installation
 
 1. download the [Google App Engine SDK for Python](https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python)
