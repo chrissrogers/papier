@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd src/etherous/static/assets/scss/ && compass watch&
