@@ -924,6 +924,7 @@ td {
 }
 /* line 77, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation {
+  display: none;
   width: 100%;
   height: 240px;
   position: relative;
@@ -936,18 +937,18 @@ td {
   background-image: -o-linear-gradient(90deg, #f4f2ed 50%, #efece8);
   background-image: linear-gradient(90deg, #f4f2ed 50%, #efece8);
 }
-/* line 83, ../scss/partials/_tophat.scss */
+/* line 84, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img {
   position: absolute;
 }
-/* line 85, ../scss/partials/_tophat.scss */
+/* line 86, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.cloud-1 {
   -webkit-animation: cloud-1-anim 120s linear 0 infinite normal;
   -moz-animation: cloud-1-anim 120s linear 0 infinite normal;
   -ms-animation: cloud-1-anim 120s linear 0 infinite normal;
   animation: cloud-1-anim 120s linear 0 infinite normal;
 }
-/* line 90, ../scss/partials/_tophat.scss */
+/* line 91, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.soleil {
   width: 149px;
   height: 145px;
@@ -958,7 +959,7 @@ td {
   -ms-animation: soleil-anim 20s ease-out 0 infinite normal;
   animation: soleil-anim 20s ease-out 0 infinite normal;
 }
-/* line 97, ../scss/partials/_tophat.scss */
+/* line 98, ../scss/partials/_tophat.scss */
 .tophat .tophat-animation img.twine-1 {
   width: 19px;
   height: 311px;
@@ -972,7 +973,7 @@ td {
 
 /* line 11, ../scss/style.scss */
 body {
-  background: #f4f2ed;
+  background: #f4f2f0;
   font-family: Georgia, serif;
   color: #2B2124;
 }

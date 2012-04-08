@@ -2,7 +2,6 @@
   decorators.py
 
   Decorators for URL handlers
-
 """
 
 from functools import wraps

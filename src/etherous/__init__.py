@@ -1,6 +1,5 @@
 """
   Initialize Flask app
-
 """
 
 from flask import Flask
