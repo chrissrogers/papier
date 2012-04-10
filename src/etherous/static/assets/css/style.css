@@ -406,31 +406,41 @@ section.tophat header.information nav a {
 }
 /* line 25, ../scss/partials/_main.scss */
 section.tophat header.information nav a.highlight {
+  position: relative;
   color: #D16344;
 }
-/* line 27, ../scss/partials/_main.scss */
+/* line 28, ../scss/partials/_main.scss */
 section.tophat header.information nav a.highlight:hover {
   border-bottom: 2px solid #D16344;
 }
-/* line 29, ../scss/partials/_main.scss */
+/* line 30, ../scss/partials/_main.scss */
+section.tophat header.information nav a.highlight:hover .icon-pen {
+  position: absolute;
+  top: -2px;
+  right: -30px;
+  width: 21px;
+  height: 21px;
+  background: url("/assets/img/icons/fountain-pen-red-45.png") no-repeat 0 0 transparent;
+}
+/* line 40, ../scss/partials/_main.scss */
 section.tophat header.information nav a:hover {
   border-bottom: 2px solid #2B2124;
 }
-/* line 36, ../scss/partials/_main.scss */
+/* line 47, ../scss/partials/_main.scss */
 section.tophat div.decoration div.photo {
   width: 100%;
   height: 333px;
   position: relative;
   overflow: hidden;
 }
-/* line 41, ../scss/partials/_main.scss */
+/* line 52, ../scss/partials/_main.scss */
 section.tophat div.decoration div.photo img {
   position: absolute;
   min-width: 1440px;
   width: 100% !important;
   width: auto;
 }
-/* line 47, ../scss/partials/_main.scss */
+/* line 58, ../scss/partials/_main.scss */
 section.tophat div.decoration div.photo div.etherous-is-easy {
   font-size: 3.5em;
   color: #F4F2F0;
@@ -438,43 +448,43 @@ section.tophat div.decoration div.photo div.etherous-is-easy {
   margin: 80px 0 0;
   width: 450px;
 }
-/* line 56, ../scss/partials/_main.scss */
+/* line 67, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors div {
   float: left;
   height: 10px;
   width: 20%;
 }
-/* line 61, ../scss/partials/_main.scss */
+/* line 72, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 62, ../scss/partials/_main.scss */
+/* line 73, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 63, ../scss/partials/_main.scss */
+/* line 74, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 64, ../scss/partials/_main.scss */
+/* line 75, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 65, ../scss/partials/_main.scss */
+/* line 76, ../scss/partials/_main.scss */
 section.tophat div.decoration div.tophat-colors .color-5 {
   background: #83555E;
 }
 
-/* line 73, ../scss/partials/_main.scss */
+/* line 84, ../scss/partials/_main.scss */
 section.lemme-introduce-myself {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
 }
-/* line 75, ../scss/partials/_main.scss */
+/* line 86, ../scss/partials/_main.scss */
 section.lemme-introduce-myself section.silly-story {
   font-size: 1.35em;
   line-height: 1.9em;
 }
-/* line 78, ../scss/partials/_main.scss */
+/* line 89, ../scss/partials/_main.scss */
 section.lemme-introduce-myself section.silly-story img.the-silly-story-begins {
   float: left;
   margin: 0 0.5em 0.5em 0;

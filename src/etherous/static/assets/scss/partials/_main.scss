@@ -23,8 +23,19 @@ section.tophat {
         border: none;
         margin: 0 24px 0 0;
         &.highlight {
+          position: relative;
           color: #D16344;
-          &:hover { border-bottom: 2px solid #D16344; }
+          &:hover {
+            border-bottom: 2px solid #D16344;
+            .icon-pen {
+              position: absolute;
+              top: -2px;
+              right: -30px;
+              width: 21px;
+              height: 21px;
+              background: url('/assets/img/icons/fountain-pen-red-45.png') no-repeat 0 0 transparent;
+            }
+          }
         }
         &:hover {
           border-bottom: 2px solid #2B2124;
