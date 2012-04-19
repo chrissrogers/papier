@@ -38,4 +38,5 @@ handlers:
   static_dir: packages/flaskext/gae_mini_profiler/static
 
 - url: .*
-  script: engine.start
+  script: engine.app
+  secure: always
