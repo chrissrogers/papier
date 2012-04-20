@@ -1,7 +1,7 @@
 
 define([
 
-  'lib/ember/require-loader',
+  'ember',
 
 ], function (em) {
 
