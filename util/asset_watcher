@@ -1,17 +1,19 @@
 #!/bin/bash
 
-base_path = $(pwd);
+base_path=$(pwd);
 
 # Javascript - lmd (lazy module declaration)
 hash lmd 2>/dev/null || { 
-  echo >&2 "lmd not installed. Run 'npm install lmd -g' or see github.com/azproduction/lmd";
+  echo >&2 -e "\n\tlmd not installed. $(tput setaf 2)npm install lmd -g$(tput sgr0) or $(tput setaf 7)github.com/azproduction/lmd$(tput sgr0)\n";
   exit 1;
 }
-cd "$base_path/src/etherous/static/assets/js/" && lmd watch config/development.lmd.json application.dev.js&
 
-# CSS - compass
+# SCSS - compass
 hash compass 2>/dev/null || { 
-  echo >&2 "compass not installed. Run 'gem install compass' or see compass-style.org/install";
+  echo >&2 -e "\n\tcompass not installed. $(tput setaf 2)gem install compass$(tput sgr0) or $(tput setaf 7)compass-style.org/install$(tput sgr0)\n";
   exit 1;
 }
-cd "$base_path/src/etherous/static/assets/scss/" && compass watch&
+
+cd $base_path"/src/etherous/static/assets/js/" && lmd watch config/development.lmd.json application.dev.js&
+
+cd $base_path"/src/etherous/static/assets/scss/" && compass watch&
