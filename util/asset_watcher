@@ -1,0 +1,17 @@
+#!/bin/bash
+
+base_path = $(pwd);
+
+# Javascript - lmd (lazy module declaration)
+hash lmd 2>/dev/null || { 
+  echo >&2 "lmd not installed. Run 'npm install lmd -g' or see github.com/azproduction/lmd";
+  exit 1;
+}
+cd "$base_path/src/etherous/static/assets/js/" && lmd watch config/development.lmd.json application.dev.js&
+
+# CSS - compass
+hash compass 2>/dev/null || { 
+  echo >&2 "compass not installed. Run 'gem install compass' or see compass-style.org/install";
+  exit 1;
+}
+cd "$base_path/src/etherous/static/assets/scss/" && compass watch&
