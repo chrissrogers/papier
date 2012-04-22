@@ -1,4 +1,14 @@
+(function (require) {
+  
+  var _ = require('underscore');
 
+  _.each(['a','b','c'], function (elem) {
+    console.log(elem);
+  });
+
+})
+
+/*
 define([
 
   'ember',
@@ -19,4 +29,4 @@ define([
 
   return etherous;
 
-});
+});*/

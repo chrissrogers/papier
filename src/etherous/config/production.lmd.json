@@ -1,10 +1,5 @@
 {
-  "path": "../static/assets/js/",
-  "modules": {
-    "main": "main.js"
-  },
-  "main": "main",
+  "extends": "./common.lmd.json",
   "lazy": true,
-  "pack": true,
-  "global": "this"
+  "pack": true
 }

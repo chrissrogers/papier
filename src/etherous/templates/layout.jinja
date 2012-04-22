@@ -22,7 +22,7 @@
   {% block content %}{% endblock %}
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="/assets/js/lib/require.js" data-main="assets/js/main"></script>
+  <script src="/assets/js/application{% if config.DEBUG %}.dev{% endif %}.js"></script>
 
 </body>
 </html>
