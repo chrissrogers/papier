@@ -34,9 +34,6 @@ handlers:
   static_files: etherous/static/robots.txt
   upload: etherous/static/robots.txt
 
-- url: /_gae_mini_profiler/static
-  static_dir: packages/flaskext/gae_mini_profiler/static
-
 - url: .*
   script: engine.app
   secure: always

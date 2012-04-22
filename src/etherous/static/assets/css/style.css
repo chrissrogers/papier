@@ -499,15 +499,16 @@ body {
   background: #F4F2F0;
   font-family: Georgia, serif;
   color: #2B2124;
+  overflow: hidden;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 a {
   color: #93737A;
   border-bottom: 1px dashed #C1B6B9;
   cursor: pointer;
 }
-/* line 26, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 a:hover {
   color: #83555E;
   border-bottom: 1px solid #C1B6B9;
