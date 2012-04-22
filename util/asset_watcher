@@ -14,6 +14,6 @@ hash compass 2>/dev/null || {
   exit 1;
 }
 
-cd $base_path"/src/etherous/static/assets/js/" && lmd watch config/development.lmd.json application.dev.js&
-
+cd $base_path"/src/etherous/" && lmd watch config/development.lmd.json static/assets/js/application.dev.js&
+cd $base_path"/src/etherous/" && lmd watch config/production.lmd.json static/assets/js/application.js&
 cd $base_path"/src/etherous/static/assets/scss/" && compass watch&

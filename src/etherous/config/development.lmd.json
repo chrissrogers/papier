@@ -1,0 +1,10 @@
+{
+  "path": "../static/assets/js/",
+  "modules": {
+    "main": "main.js"     // "module_pseudonym": "module_file"
+  },
+  "main": "main",    // a main module - content of that module will be called on start (no reason to eval)
+  "lazy": true,      // if true - all modules will be evaled on demand [default=true]
+  "pack": false,     // if true - module will be packed using uglifyjs [default=true]
+  "global": "this"   // optional, default="this" name of global object, passed to the lmd
+}
