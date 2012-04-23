@@ -2,6 +2,11 @@
   
   var _ = require('underscore');
 
+  // scroll to the welcome message
+  $(function () {
+    $('html, body').scrollTop($('#welcome').offset().top);
+  });
+
   _.each(['a','b','c'], function (elem) {
     console.log(elem);
   });

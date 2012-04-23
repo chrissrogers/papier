@@ -1,0 +1,106 @@
+#welcome {
+  background: #F4F2F0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 100%;
+  section.tophat {
+    @include FellGreatPrimer;
+    position: relative;
+    header.information {
+      height: 80px;
+      h1 {
+        font-size: 4em;
+        font-weight: normal;
+        text-align: left;
+        line-height: 0.7em;
+        margin: 20px 0;
+        padding: 0;
+        position: absolute;
+      }
+      nav {
+        text-align: right;
+        padding: 28px 0 0;
+        a {
+          color: #2B2124;
+          font-size: 1.5em;
+          text-decoration: none;
+          border: none;
+          margin: 0 24px 0 0;
+          &.highlight {
+            position: relative;
+            color: #D16344;
+            &:hover {
+              border-bottom: 2px solid #D16344;
+              .icon-pen {
+                position: absolute;
+                top: -2px;
+                right: -30px;
+                width: 21px;
+                height: 21px;
+                background: url('/assets/img/icons/fountain-pen-red-45.png') no-repeat 0 0 transparent;
+              }
+            }
+          }
+          &:hover {
+            border-bottom: 2px solid #2B2124;
+          }
+        }
+      }
+    }
+    div.tophat-colors {
+      div {
+        float: left;
+        height: 6px;
+        width: 20%;
+      }
+      .color-1 { background: #F1E8B4; }
+      .color-2 { background: #B2BB91; }
+      .color-3 { background: #D7BF5E; }
+      .color-4 { background: #D16344; }
+      .color-5 { background: #83555E; }
+    }
+    div.decoration {
+      div.photo {
+        width: 100%;
+        height: 333px;
+        position: relative;
+        overflow: hidden;
+        border-color: #CEC7C0;
+        border-style: solid;
+        border-width: 0px 0;
+        box-shadow: 0 5px 30px #CEC7C0;
+        img {
+          position: absolute;
+          min-width: 1440px;
+          width: 100% !important;
+          width: auto;
+        }
+        div.etherous-is-easy {
+          font-size: 3.5em;
+          color: #F4F2F0;
+          text-shadow: 1px 1px 1px #2B2124;
+          margin: 80px 0 0;
+          width: 450px;
+        }
+      }
+    }
+  }
+
+  section.main {
+  }
+
+  section.lemme-introduce-myself {
+    @include FellGreatPrimer;
+    section.silly-story {
+      font-size: 1.35em;
+      line-height: 1.9em;
+      img.the-silly-story-begins {
+        float: left;
+        margin: 0 0.5em 0.5em 0;
+      }
+    }
+  }
+}

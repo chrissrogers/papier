@@ -11,13 +11,15 @@
 
 @import 'partials/layouts';
 @import 'partials/ie';
-@import 'partials/main';
+@import 'partials/editor';
+@import 'partials/welcome';
+
+// html { overflow: hidden; }
 
 body {
   background: #F4F2F0;
   font-family: Georgia, serif;
   color: #2B2124;
-  overflow: hidden;
 }
 
 a {

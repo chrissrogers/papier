@@ -372,17 +372,37 @@ td {
   margin: 0 auto;
 }
 
-/* line 2, ../scss/partials/_main.scss */
-section.tophat {
+/* line 1, ../scss/partials/_editor.scss */
+#editor {
+  background: url("/assets/img/background-subtle-un.jpg") top left repeat #f4f2f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 1, ../scss/partials/_welcome.scss */
+#welcome {
+  background: #F4F2F0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 100%;
+}
+/* line 9, ../scss/partials/_welcome.scss */
+#welcome section.tophat {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
   position: relative;
 }
-/* line 5, ../scss/partials/_main.scss */
-section.tophat header.information {
+/* line 12, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information {
   height: 80px;
 }
-/* line 7, ../scss/partials/_main.scss */
-section.tophat header.information h1 {
+/* line 14, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information h1 {
   font-size: 4em;
   font-weight: normal;
   text-align: left;
@@ -391,30 +411,30 @@ section.tophat header.information h1 {
   padding: 0;
   position: absolute;
 }
-/* line 16, ../scss/partials/_main.scss */
-section.tophat header.information nav {
+/* line 23, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav {
   text-align: right;
   padding: 28px 0 0;
 }
-/* line 19, ../scss/partials/_main.scss */
-section.tophat header.information nav a {
+/* line 26, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav a {
   color: #2B2124;
   font-size: 1.5em;
   text-decoration: none;
   border: none;
   margin: 0 24px 0 0;
 }
-/* line 25, ../scss/partials/_main.scss */
-section.tophat header.information nav a.highlight {
+/* line 32, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav a.highlight {
   position: relative;
   color: #D16344;
 }
-/* line 28, ../scss/partials/_main.scss */
-section.tophat header.information nav a.highlight:hover {
+/* line 35, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav a.highlight:hover {
   border-bottom: 2px solid #D16344;
 }
-/* line 30, ../scss/partials/_main.scss */
-section.tophat header.information nav a.highlight:hover .icon-pen {
+/* line 37, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav a.highlight:hover .icon-pen {
   position: absolute;
   top: -2px;
   right: -30px;
@@ -422,38 +442,38 @@ section.tophat header.information nav a.highlight:hover .icon-pen {
   height: 21px;
   background: url("/assets/img/icons/fountain-pen-red-45.png") no-repeat 0 0 transparent;
 }
-/* line 40, ../scss/partials/_main.scss */
-section.tophat header.information nav a:hover {
+/* line 47, ../scss/partials/_welcome.scss */
+#welcome section.tophat header.information nav a:hover {
   border-bottom: 2px solid #2B2124;
 }
-/* line 47, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors div {
+/* line 54, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors div {
   float: left;
   height: 6px;
   width: 20%;
 }
-/* line 52, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors .color-1 {
+/* line 59, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 53, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors .color-2 {
+/* line 60, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 54, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors .color-3 {
+/* line 61, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 55, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors .color-4 {
+/* line 62, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 56, ../scss/partials/_main.scss */
-section.tophat div.tophat-colors .color-5 {
+/* line 63, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.tophat-colors .color-5 {
   background: #83555E;
 }
-/* line 59, ../scss/partials/_main.scss */
-section.tophat div.decoration div.photo {
+/* line 66, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.decoration div.photo {
   width: 100%;
   height: 333px;
   position: relative;
@@ -463,52 +483,50 @@ section.tophat div.decoration div.photo {
   border-width: 0px 0;
   box-shadow: 0 5px 30px #CEC7C0;
 }
-/* line 68, ../scss/partials/_main.scss */
-section.tophat div.decoration div.photo img {
+/* line 75, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.decoration div.photo img {
   position: absolute;
   min-width: 1440px;
   width: 100% !important;
   width: auto;
 }
-/* line 74, ../scss/partials/_main.scss */
-section.tophat div.decoration div.photo div.etherous-is-easy {
+/* line 81, ../scss/partials/_welcome.scss */
+#welcome section.tophat div.decoration div.photo div.etherous-is-easy {
   font-size: 3.5em;
   color: #F4F2F0;
   text-shadow: 1px 1px 1px #2B2124;
   margin: 80px 0 0;
   width: 450px;
 }
-
-/* line 88, ../scss/partials/_main.scss */
-section.lemme-introduce-myself {
+/* line 95, ../scss/partials/_welcome.scss */
+#welcome section.lemme-introduce-myself {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
 }
-/* line 90, ../scss/partials/_main.scss */
-section.lemme-introduce-myself section.silly-story {
+/* line 97, ../scss/partials/_welcome.scss */
+#welcome section.lemme-introduce-myself section.silly-story {
   font-size: 1.35em;
   line-height: 1.9em;
 }
-/* line 93, ../scss/partials/_main.scss */
-section.lemme-introduce-myself section.silly-story img.the-silly-story-begins {
+/* line 100, ../scss/partials/_welcome.scss */
+#welcome section.lemme-introduce-myself section.silly-story img.the-silly-story-begins {
   float: left;
   margin: 0 0.5em 0.5em 0;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 19, ../scss/style.scss */
 body {
   background: #F4F2F0;
   font-family: Georgia, serif;
   color: #2B2124;
-  overflow: hidden;
 }
 
-/* line 23, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 a {
   color: #93737A;
   border-bottom: 1px dashed #C1B6B9;
   cursor: pointer;
 }
-/* line 27, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 a:hover {
   color: #83555E;
   border-bottom: 1px solid #C1B6B9;
