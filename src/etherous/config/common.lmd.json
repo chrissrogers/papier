@@ -1,5 +1,5 @@
 {
-  "path": "../static/assets/js/",
+  "path": "../assets/js/",
   "modules": {
     "main": "app/main.js",
     "underscore": "lib/underscore.js"
