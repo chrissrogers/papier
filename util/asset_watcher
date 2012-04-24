@@ -2,18 +2,54 @@
 
 base_path=$(pwd);
 
-# Javascript - lmd (lazy module declaration)
-hash lmd 2>/dev/null || { 
-  echo >&2 -e "\n\tlmd not installed. $(tput setaf 2)npm install lmd -g$(tput sgr0) or $(tput setaf 7)github.com/azproduction/lmd$(tput sgr0)\n";
-  exit 1;
-}
+if [ "$1" == 'start' ]
+then
 
-# SCSS - compass
-hash compass 2>/dev/null || { 
-  echo >&2 -e "\n\tcompass not installed. $(tput setaf 2)gem install compass$(tput sgr0) or $(tput setaf 7)compass-style.org/install$(tput sgr0)\n";
-  exit 1;
-}
+  if [ -f /tmp/asset_watcher_procs.pid ]
+  then
+    echo -e "\n\tasset_watcher already running. Stop using \033[32masset_watcher stop\033[0m\n";
+    exit 1;
+  fi
 
-cd $base_path"/src/etherous/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l&
-cd $base_path"/src/etherous/" && lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js&
-cd $base_path"/src/etherous/static/assets/scss/" && compass watch&
+  # Javascript - lmd (lazy module declaration)
+  hash lmd 2>/dev/null || { 
+    echo >&2 -e "\n\tlmd not installed. $(tput setaf 2)npm install lmd -g$(tput sgr0) or $(tput setaf 7)github.com/azproduction/lmd$(tput sgr0)\n";
+    exit 1;
+  }
+
+  # SCSS - compass
+  hash compass 2>/dev/null || { 
+    echo >&2 -e "\n\tcompass not installed. $(tput setaf 2)gem install compass$(tput sgr0) or $(tput setaf 7)compass-style.org/install$(tput sgr0)\n";
+    exit 1;
+  }
+
+  cd $base_path"/src/etherous/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l&
+
+  echo `ps aux | grep -F 'lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid
+
+  cd $base_path"/src/etherous/" && lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js&
+
+  echo `ps aux | grep -F 'lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid
+
+  cd $base_path"/src/etherous/static/assets/scss/" && compass watch&
+
+  echo `ps aux | grep -F 'compass watch' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid
+
+  echo -e "\n\tNow monitoring assets. \033[32masset_watcher stop\033[0m to halt\n"
+
+elif [ "$1" == 'stop' ]
+then
+
+  while read line
+  do
+    [ -z "$line" ] && continue
+    kill -9 $line
+  done </tmp/asset_watcher_procs.pid
+
+  rm /tmp/asset_watcher_procs.pid
+
+else
+
+  echo "usage: asset_wathcer start|stop"
+
+fi
