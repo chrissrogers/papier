@@ -1,43 +1,20 @@
-/* the humans responsible & colophon */
 /* humanstxt.org */
 
+                   _/      _/
+        _/_/    _/_/_/_/  _/_/_/      _/_/    _/  _/_/    _/_/    _/    _/    _/_/_/
+     _/_/_/_/    _/      _/    _/  _/_/_/_/  _/_/      _/    _/  _/    _/  _/_/
+    _/          _/      _/    _/  _/        _/        _/    _/  _/    _/      _/_/
+     _/_/_/      _/_/  _/    _/    _/_/_/  _/          _/_/      _/_/_/  _/_/_/
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Builder of everything: Christopher Scott Rogers
+  Site: ethero.us
+  Location: New Orleans, Louisiana
 
 /* THANKS */
-  Names (& URL):
+  To my mother, father, family, friends, and the people of Earth: thank you for continuing to be.
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
-
-
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+  Standards: HTML5, CSS3, CommonJS
+  Components: Flask, Ember, Underscore, jQuery, Lazy Module Declaration, Compass/Sass, & Google App Engine
+  Software: Sublime Text 2

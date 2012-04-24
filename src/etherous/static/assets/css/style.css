@@ -374,7 +374,7 @@ td {
 
 /* line 1, ../scss/partials/_editor.scss */
 #editor {
-  background: url("/assets/img/background-subtle-un.jpg") top left repeat #f4f2f0;
+  background: url("/assets/img/editor-bg-linen.jpg") top left repeat #f4f2f0;
   position: absolute;
   top: 0;
   left: 0;
