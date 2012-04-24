@@ -1,8 +1,17 @@
 {
   "path": "../assets/js/",
   "modules": {
-    "main": "app/main.js",
-    "underscore": "lib/underscore.js"
+    
+    "underscore": "lib/underscore.js",
+    "ember": {
+      "path": "lib/ember-0.9.7.1.js",
+      "lazy": false
+    },
+    
+    "app": "app/app.js",
+    "app-view-welcome": "app/views/welcome.js",
+
+    "main": "main.js"
   },
   "main": "main",
   "global": "this"

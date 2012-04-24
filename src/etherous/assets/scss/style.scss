@@ -1,7 +1,6 @@
 
 @import 'compass/css3';
 @import 'modules/html5boilerplate';
-@import 'modules/bourbon/bourbon';
 
 @include font-face('FellGreatPrimerRegular', font-files('/assets/fonts/imfegprm29p-webfont.eot', '/assets/fonts/imfegprm29p-webfont.eot?#iefix', '/assets/fonts/imfegprm29p-webfont.woff', '/assets/fonts/imfegprm29p-webfont.ttf', '/assets/css/fonts/imfegprm29p-webfont.svg#IMFELLGreatPrimerRegular'));
 
@@ -13,8 +12,6 @@
 @import 'partials/ie';
 @import 'partials/editor';
 @import 'partials/welcome';
-
-// html { overflow: hidden; }
 
 body {
   background: #F4F2F0;
