@@ -385,17 +385,18 @@ td {
 /* line 1, ../../../assets/scss/partials/_welcome.scss */
 #welcome {
   background: #F4F2F0;
+  position: relative;
 }
-/* line 3, ../../../assets/scss/partials/_welcome.scss */
+/* line 4, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
   position: relative;
 }
-/* line 6, ../../../assets/scss/partials/_welcome.scss */
+/* line 7, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information {
   height: 80px;
 }
-/* line 8, ../../../assets/scss/partials/_welcome.scss */
+/* line 9, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information h1 {
   font-size: 4em;
   font-weight: normal;
@@ -405,12 +406,12 @@ td {
   padding: 0;
   position: absolute;
 }
-/* line 17, ../../../assets/scss/partials/_welcome.scss */
+/* line 18, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav {
   text-align: right;
   padding: 28px 0 0;
 }
-/* line 20, ../../../assets/scss/partials/_welcome.scss */
+/* line 21, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav a {
   color: #2B2124;
   font-size: 1.5em;
@@ -418,16 +419,16 @@ td {
   border: none;
   margin: 0 24px 0 0;
 }
-/* line 26, ../../../assets/scss/partials/_welcome.scss */
+/* line 27, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav a.highlight {
   position: relative;
   color: #D16344;
 }
-/* line 29, ../../../assets/scss/partials/_welcome.scss */
+/* line 30, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav a.highlight:hover {
   border-bottom: 2px solid #D16344;
 }
-/* line 31, ../../../assets/scss/partials/_welcome.scss */
+/* line 32, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav a.highlight:hover .icon-pen {
   position: absolute;
   top: -2px;
@@ -436,37 +437,37 @@ td {
   height: 21px;
   background: url("/assets/img/icons/fountain-pen-red-45.png") no-repeat 0 0 transparent;
 }
-/* line 41, ../../../assets/scss/partials/_welcome.scss */
+/* line 42, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat header.information nav a:hover {
   border-bottom: 2px solid #2B2124;
 }
-/* line 48, ../../../assets/scss/partials/_welcome.scss */
+/* line 49, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors div {
   float: left;
   height: 6px;
   width: 20%;
 }
-/* line 53, ../../../assets/scss/partials/_welcome.scss */
+/* line 54, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors .color-1 {
   background: #F1E8B4;
 }
-/* line 54, ../../../assets/scss/partials/_welcome.scss */
+/* line 55, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors .color-2 {
   background: #B2BB91;
 }
-/* line 55, ../../../assets/scss/partials/_welcome.scss */
+/* line 56, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors .color-3 {
   background: #D7BF5E;
 }
-/* line 56, ../../../assets/scss/partials/_welcome.scss */
+/* line 57, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors .color-4 {
   background: #D16344;
 }
-/* line 57, ../../../assets/scss/partials/_welcome.scss */
+/* line 58, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.tophat-colors .color-5 {
   background: #83555E;
 }
-/* line 60, ../../../assets/scss/partials/_welcome.scss */
+/* line 61, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.decoration div.photo {
   width: 100%;
   height: 333px;
@@ -477,14 +478,14 @@ td {
   border-width: 0px 0;
   box-shadow: 0 5px 30px #CEC7C0;
 }
-/* line 69, ../../../assets/scss/partials/_welcome.scss */
+/* line 70, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.decoration div.photo img {
   position: absolute;
   min-width: 1440px;
   width: 100% !important;
   width: auto;
 }
-/* line 75, ../../../assets/scss/partials/_welcome.scss */
+/* line 76, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.tophat div.decoration div.photo div.etherous-is-easy {
   font-size: 3.5em;
   color: #F4F2F0;
@@ -492,16 +493,16 @@ td {
   margin: 80px 0 0;
   width: 450px;
 }
-/* line 89, ../../../assets/scss/partials/_welcome.scss */
+/* line 90, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.lemme-introduce-myself {
   font-family: 'FellGreatPrimerRegular', Georgia, serif;
 }
-/* line 91, ../../../assets/scss/partials/_welcome.scss */
+/* line 92, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.lemme-introduce-myself section.silly-story {
   font-size: 1.35em;
   line-height: 1.9em;
 }
-/* line 94, ../../../assets/scss/partials/_welcome.scss */
+/* line 95, ../../../assets/scss/partials/_welcome.scss */
 #welcome section.lemme-introduce-myself section.silly-story img.the-silly-story-begins {
   float: left;
   margin: 0 0.5em 0.5em 0;

@@ -7,9 +7,10 @@
       "path": "lib/ember-0.9.7.1.js",
       "lazy": false
     },
-    
+
     "app": "app/app.js",
-    "app-view-welcome": "app/views/welcome.js",
+    "view-*": "app/views/*.js",
+    "template-*": "app/templates/*.hbs",
 
     "main": "main.js"
   },

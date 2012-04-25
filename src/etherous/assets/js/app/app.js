@@ -1,10 +1,20 @@
 (function (require) {
 
-  var app = Em.Application.create();
+  require('ember');
 
-  app.WelcomeView = require('app-view-welcome');
-  app.EditorView = require('app-view-editor');
+  etherous = Em.Application.create();
 
-  return app;
+  // Model testing
+  etherous.president = Ember.Object.create({
+    name: "Barack Obama"
+  });
+
+  require('view-editor');
+  require('view-welcome');
+  
+  etherous.EditorView.appendTo('#main');
+  etherous.WelcomeView.appendTo('#main');
+
+  return etherous;
 
 })

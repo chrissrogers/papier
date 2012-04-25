@@ -9,8 +9,8 @@
                 return module;
             }
 
-            // Lazy LMD module
-            if (typeof module === "string") {
+            // Lazy LMD module not a string
+            if (/^\(function\(/.test(module)) {
                 module = window.eval(module);
             }
 
@@ -39,9 +39,7 @@
     main(require, output.exports, output);
 })(this,(function (require) {
   
-  var etherous = require('app');
-
-  console.log(etherous);
+  require('app');
 
 })
 ,{
@@ -19892,15 +19890,44 @@ Ember.$(document).ready(
 
 }),
 "app": (function (require) {
-  
+
   require('ember');
 
-  var app = Em.Application.create();
+  etherous = Em.Application.create();
 
-  app.WelcomeView = require('view-welcome');
+  // Model testing
+  etherous.president = Ember.Object.create({
+    name: "Barack Obama"
+  });
 
-  return app;
+  require('view-editor');
+  require('view-welcome');
+  
+  etherous.EditorView.appendTo('#main');
+  etherous.WelcomeView.appendTo('#main');
+
+  return etherous;
 
 })
+,
+"view-editor": (function (require, exports, module) { /* wrapped by builder */
 
+etherous.EditorView = Ember.View.create({
+  template: Ember.Handlebars.compile(require('template-editor')),
+  president: etherous.president.name,
+  mouseDown: function () {
+    window.alert("Editor");
+  }
+});
+
+}),
+"view-welcome": (function (require, exports, module) { /* wrapped by builder */
+
+etherous.WelcomeView = Ember.View.create({
+  template: Ember.Handlebars.compile(require('template-welcome')),
+});
+
+}),
+"template-editor": "<section id=\"editor\">\n  Hi! I'm the editor around here. {{president}}. Ask me about my buttons.\n</section>",
+"template-welcome": "\n<section id=\"welcome\">\n  <section class=\"tophat\">\n    <div class=\"tophat-colors\">\n      <div class=\"color-1\"></div>\n      <div class=\"color-2\"></div>\n      <div class=\"color-3\"></div>\n      <div class=\"color-4\"></div>\n      <div class=\"color-5\"></div>\n    </div>\n    <header class=\"information layout-centered\">\n      <h1>etherous</h1>\n      <nav>\n        <a href=\"#introduction\">an introduction</a>\n        <a href=\"#about\" class=\"highlight\">\n          see for yourself\n          <span class=\"icon-pen\"></span>\n        </a>\n      </nav>\n    </header>\n    <div class=\"decoration\">\n      <div class=\"photo\">\n        <img src=\"/assets/img/main-blanche-fleur.jpg\" alt=\"\">\n        <div class=\"layout-centered\">\n          <div class=\"etherous-is-easy\">the easiest way to write on the web. </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"main layout-centered\">\n    <section class=\"introduction lemme-introduce-myself\">\n      <section class=\"silly-story\">\n        <p>\n          <img src=\"/assets/img/the-silly-story-begins.png\" alt=\"T\" class=\"the-silly-story-begins\">here \n          once was a young boy, who as his age befit would imagine himself as something other \n          than he was. His self-portraits hung abourd great ships, atop castle-adorned towers, in \n          the depths of tight ocean trenches, the furthest reaches of outer space, and in the jaws \n          of hungry beasts. He warded against thieves, underlords, sea monsters, asteroid fields, \n          and all variety of ne'er-do-gooder. It was his world, and he would do anything to protect it.\n        </p>\n        <p>A</p>\n        <p>B</p>\n        <p>C</p>\n        <p>D</p>\n      </section>\n    </section>\n  </section>\n</section>\n"
 },{})

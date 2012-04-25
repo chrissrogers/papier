@@ -1,9 +1,4 @@
-(function (require) {
-  
-  return Em.View.extend({
-    mouseDown: function () {
-      window.alert("welcome");
-    }
-  });
 
-})
+etherous.WelcomeView = Ember.View.create({
+  template: Ember.Handlebars.compile(require('template-welcome')),
+});
