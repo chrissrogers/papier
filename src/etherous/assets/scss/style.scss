@@ -13,6 +13,8 @@
 @import 'partials/editor';
 @import 'partials/welcome';
 
+::selection { background: #D7BF5E; color: #2B2124; text-shadow: none; }
+
 body {
   background: #F4F2F0;
   font-family: Georgia, serif;

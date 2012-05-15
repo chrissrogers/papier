@@ -91,10 +91,21 @@
     @include FellGreatPrimer;
     section.silly-story {
       font-size: 1.35em;
-      line-height: 1.9em;
+      line-height: 2em;
       img.the-silly-story-begins {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      div.t-bounds div {
+        height: 32px;
+        width: 120px;
         float: left;
-        margin: 0 0.5em 0.5em 0;
+        clear: left;
+        &.one { height: 105px; }
+        &.two { width: 108px; }
+        &.three { width: 80px; }
+        &.four { width: 45px; }
       }
     }
   }
