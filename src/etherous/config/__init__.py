@@ -11,6 +11,8 @@ import os
 
 from secret_keys import CSRF_SECRET_KEY, SESSION_KEY
 
+from flask import request
+
 # Set secret keys for CSRF protection
 SECRET_KEY = CSRF_SECRET_KEY
 CSRF_SESSION_KEY = SESSION_KEY
