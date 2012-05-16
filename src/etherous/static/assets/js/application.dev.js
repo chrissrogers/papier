@@ -1,21 +1,16 @@
 (function (global, main, modules, sandboxed_modules) {
     var initialized_modules = {},
-        require = function (moduleName) {
-            var module = modules[moduleName],
-                output;
-
-            // Already inited - return as is
-            if (initialized_modules[moduleName] && module) {
-                return module;
-            }
-
-            // Lazy LMD module not a string
-            if (/^\(function\(/.test(module)) {
-                module = window.eval(module);
-            }
-
+        global_eval = global.eval,
+        global_document = global.document,
+        /**
+         * @param {String} moduleName module name or path to file
+         * @param {*}      module module content
+         *
+         * @returns {*}
+         */
+        register_module = function (moduleName, module) {
             // Predefine in case of recursive require
-            output = {exports: {}};
+            var output = {exports: {}};
             initialized_modules[moduleName] = 1;
             modules[moduleName] = output.exports;
 
@@ -29,12 +24,36 @@
 
             return modules[moduleName] = module;
         },
+        /**
+         * @param {String} moduleName module name or path to file
+         *
+         * @returns {*}
+         */
+        require = function (moduleName) {
+            var module = modules[moduleName];
+
+            // Already inited - return as is
+            if (initialized_modules[moduleName] && module) {
+                return module;
+            }
+
+            // Lazy LMD module not a string
+            if (/^\(function\(/.test(module)) {
+                module = '(function(){return' + module + '})()';
+                module = global_eval(module);
+            }
+
+            return register_module(moduleName, module);
+        },
         output = {exports: {}};
 
     for (var moduleName in modules) {
         // reset module init flag in case of overwriting
         initialized_modules[moduleName] = 0;
     }
+
+
+
 
     main(require, output.exports, output);
 })(this,(function (require) {

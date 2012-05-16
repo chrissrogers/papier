@@ -13,6 +13,8 @@ from flask import render_template, flash, url_for, redirect
 # from models import ExampleModel
 from decorators import login_required, admin_required
 
+def production_placeholder():
+  return render_template('placeholder.jinja')
 
 def home():
   return render_template('main.jinja')

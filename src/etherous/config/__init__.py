@@ -17,8 +17,13 @@ CSRF_SESSION_KEY = SESSION_KEY
 
 CSRF_ENABLED = True
 
-# Auto-set debug mode based on App Engine dev environ
+# Local development
 if 'SERVER_SOFTWARE' in os.environ and os.environ['SERVER_SOFTWARE'].startswith('Dev'):
   DEBUG = True
+  ENVIRONMENT = 'development-local'
+elif os.environ['HTTP_HOST'] == 'dev.ethero.us':
+  DEBUG = False
+  ENVIRONMENT = 'development-public'
 else:
   DEBUG = False
+  ENVIRONMENT = 'production'
