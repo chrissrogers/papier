@@ -21,7 +21,7 @@ CSRF_ENABLED = True
 if 'SERVER_SOFTWARE' in os.environ and os.environ['SERVER_SOFTWARE'].startswith('Dev'):
   DEBUG = True
   ENVIRONMENT = 'development-local'
-elif os.environ['HTTP_HOST'] == 'dev.ethero.us':
+elif request.environ['HTTP_HOST'] == 'dev.ethero.us':
   DEBUG = False
   ENVIRONMENT = 'development-public'
 else:
