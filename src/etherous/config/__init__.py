@@ -11,8 +11,6 @@ import os
 
 from secret_keys import CSRF_SECRET_KEY, SESSION_KEY
 
-from flask import request
-
 # Set secret keys for CSRF protection
 SECRET_KEY = CSRF_SECRET_KEY
 CSRF_SESSION_KEY = SESSION_KEY
@@ -22,10 +20,5 @@ CSRF_ENABLED = True
 # Local development
 if 'SERVER_SOFTWARE' in os.environ and os.environ['SERVER_SOFTWARE'].startswith('Dev'):
   DEBUG = True
-  ENVIRONMENT = 'development-local'
-elif request.environ['HTTP_HOST'] == 'dev.ethero.us':
-  DEBUG = False
-  ENVIRONMENT = 'development-public'
 else:
   DEBUG = False
-  ENVIRONMENT = 'production'
