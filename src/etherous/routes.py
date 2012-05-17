@@ -10,7 +10,7 @@ from etherous import app
 from etherous import views
 
 
-if app.config['ENVIRONMENT'] == 'production':
+if not app.config['DEBUG']:
 
   app.add_url_rule('/', 'home', view_func = views.production_placeholder)
 
