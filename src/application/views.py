@@ -19,13 +19,6 @@ def production_placeholder():
 def home():
   return render_template('main.jinja')
 
-
-@admin_required
-def admin_only():
-  """This view requires an admin account"""
-  return 'Super-seekrit admin page.'
-
-
 def warmup():
   """
   App Engine warmup handler
