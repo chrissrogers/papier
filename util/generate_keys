@@ -25,7 +25,7 @@ from string import Template
 
 
 # File settings
-file_name = '../src/etherous/config/secret_keys.py'
+file_name = '../src/application/config/secret_keys.py'
 file_template = Template('''# CSRF- and Session keys
 
 CSRF_SECRET_KEY = '$csrf_key'
