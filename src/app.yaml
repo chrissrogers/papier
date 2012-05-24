@@ -1,5 +1,5 @@
 application: papier-api
-version: 0.african-wild-ass
+version: 0-african-wild-ass
 runtime: python27
 api_version: 1
 threadsafe: true
