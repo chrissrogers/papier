@@ -1,16 +1,21 @@
 (function (global, main, modules, sandboxed_modules) {
     var initialized_modules = {},
-        global_eval = global.eval,
-        global_document = global.document,
-        /**
-         * @param {String} moduleName module name or path to file
-         * @param {*}      module module content
-         *
-         * @returns {*}
-         */
-        register_module = function (moduleName, module) {
+        require = function (moduleName) {
+            var module = modules[moduleName],
+                output;
+
+            // Already inited - return as is
+            if (initialized_modules[moduleName] && module) {
+                return module;
+            }
+
+            // Lazy LMD module not a string
+            if (/^\(function\(/.test(module)) {
+                module = window.eval(module);
+            }
+
             // Predefine in case of recursive require
-            var output = {exports: {}};
+            output = {exports: {}};
             initialized_modules[moduleName] = 1;
             modules[moduleName] = output.exports;
 
@@ -24,36 +29,12 @@
 
             return modules[moduleName] = module;
         },
-        /**
-         * @param {String} moduleName module name or path to file
-         *
-         * @returns {*}
-         */
-        require = function (moduleName) {
-            var module = modules[moduleName];
-
-            // Already inited - return as is
-            if (initialized_modules[moduleName] && module) {
-                return module;
-            }
-
-            // Lazy LMD module not a string
-            if (/^\(function\(/.test(module)) {
-                module = '(function(){return' + module + '})()';
-                module = global_eval(module);
-            }
-
-            return register_module(moduleName, module);
-        },
         output = {exports: {}};
 
     for (var moduleName in modules) {
         // reset module init flag in case of overwriting
         initialized_modules[moduleName] = 0;
     }
-
-
-
 
     main(require, output.exports, output);
 })(this,(function (require) {
@@ -19912,28 +19893,28 @@ Ember.$(document).ready(
 
   require('ember');
 
-  etherous = Em.Application.create();
+  papier = Em.Application.create();
 
   // Model testing
-  etherous.president = Ember.Object.create({
+  papier.president = Ember.Object.create({
     name: "Barack Obama"
   });
 
   require('view-editor');
   require('view-welcome');
   
-  etherous.EditorView.appendTo('#main');
-  etherous.WelcomeView.appendTo('#main');
+  papier.EditorView.appendTo('#main');
+  papier.WelcomeView.appendTo('#main');
 
-  return etherous;
+  return papier;
 
 })
 ,
 "view-editor": (function (require, exports, module) { /* wrapped by builder */
-
-etherous.EditorView = Ember.View.create({
+  
+papier.EditorView = Ember.View.create({
   template: Ember.Handlebars.compile(require('template-editor')),
-  president: etherous.president.name,
+  president: papier.president.name,
   mouseDown: function () {
     window.alert("Editor");
   }
@@ -19942,11 +19923,11 @@ etherous.EditorView = Ember.View.create({
 }),
 "view-welcome": (function (require, exports, module) { /* wrapped by builder */
 
-etherous.WelcomeView = Ember.View.create({
+papier.WelcomeView = Ember.View.create({
   template: Ember.Handlebars.compile(require('template-welcome')),
 });
 
 }),
 "template-editor": "<section id=\"editor\">\n  Hi! I'm the editor around here. {{president}}. Ask me about my buttons.\n</section>",
-"template-welcome": "\n<section id=\"welcome\">\n  <section class=\"tophat\">\n    <div class=\"tophat-colors\">\n      <div class=\"color-1\"></div>\n      <div class=\"color-2\"></div>\n      <div class=\"color-3\"></div>\n      <div class=\"color-4\"></div>\n      <div class=\"color-5\"></div>\n    </div>\n    <header class=\"information layout-centered\">\n      <h1>etherous</h1>\n      <nav>\n        <a href=\"#introduction\">an introduction</a>\n        <a href=\"#about\" class=\"highlight\">\n          see for yourself\n          <span class=\"icon-pen\"></span>\n        </a>\n      </nav>\n    </header>\n    <div class=\"decoration\">\n      <div class=\"photo\">\n        <img src=\"/assets/img/main-blanche-fleur.jpg\" alt=\"\">\n        <div class=\"layout-centered\">\n          <div class=\"etherous-is-easy\">the easiest way to write on the web. </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"main layout-centered\">\n    <section class=\"introduction lemme-introduce-myself\">\n      <section class=\"silly-story\">\n        <img src=\"/assets/img/the-silly-story-begins.png\" alt=\"T\" class=\"the-silly-story-begins\">\n        <div class=\"t-bounds\">\n          <div class=\"one\"></div>\n          <div class=\"two\"></div>\n          <div class=\"three\"></div>\n          <div class=\"four\"></div>\n        </div>\n        <p>\n          here once was a young boy, who as his age befit would imagine himself as something other \n          than he was. His self-portraits hung abourd great ships, atop castle-adorned towers, in \n          the depths of tight ocean trenches, the furthest reaches of outer space, and in the jaws \n          of hungry beasts. He warded against thieves, underlords, sea monsters, asteroid fields, \n          and all variety of ne'er-do-gooder. It was the boy's world, and he would do anything to \n          protect it.\n        </p>\n        <p>\n          Years passed. Enemies of the boy's realm grew stronger and beckoned louder for his \n          distraction, only to be met with stronger conviction.\n        </p>\n        <p>\n          \"Nothing is stronger than imagination,\" thought the boy.\n        </p>\n        <p>\n          But as you may know, insufferable sands will ignore all bastions. The boy sought \n          the source of his world's defiance, and made haste away from his world. To stop the great \n          menace, and return triumphant to an imagined world free in its pursuit of peace and joy.\n        </p>\n        <p>\n          But we are familiar with how this story goes. The boy's world fell dormant under the \n          weight of his absence.\n        </p>\n      </section>\n    </section>\n  </section>\n</section>\n"
+"template-welcome": "\n<section id=\"welcome\">\n  <section class=\"tophat\">\n    <div class=\"tophat-colors\">\n      <div class=\"color-1\"></div>\n      <div class=\"color-2\"></div>\n      <div class=\"color-3\"></div>\n      <div class=\"color-4\"></div>\n      <div class=\"color-5\"></div>\n    </div>\n    <header class=\"information layout-centered\">\n      <h1>papier</h1>\n      <nav>\n        <a href=\"#introduction\">an introduction</a>\n        <a href=\"#about\" class=\"highlight\">\n          see for yourself\n          <span class=\"icon-pen\"></span>\n        </a>\n      </nav>\n    </header>\n    <div class=\"decoration\">\n      <div class=\"photo\">\n        <img src=\"/assets/img/main-blanche-fleur.jpg\" alt=\"\">\n        <div class=\"layout-centered\">\n          <div class=\"papier-is-easy\">the easiest way to write on the web. </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"main layout-centered\">\n    <section class=\"introduction lemme-introduce-myself\">\n      <section class=\"silly-story\">\n        <img src=\"/assets/img/the-silly-story-begins.png\" alt=\"T\" class=\"the-silly-story-begins\">\n        <div class=\"t-bounds\">\n          <div class=\"one\"></div>\n          <div class=\"two\"></div>\n          <div class=\"three\"></div>\n          <div class=\"four\"></div>\n        </div>\n        <p>\n          here once was a young boy, who as his age befit would imagine himself as something other \n          than he was. His self-portraits hung abourd great ships, atop castle-adorned towers, in \n          the depths of tight ocean trenches, the furthest reaches of outer space, and in the jaws \n          of hungry beasts. He warded against thieves, underlords, sea monsters, asteroid fields, \n          and all variety of ne'er-do-gooder. It was the boy's world, and he would do anything to \n          protect it.\n        </p>\n        <p>\n          Years passed. Enemies of the boy's realm grew stronger and beckoned louder for his \n          distraction, only to be met with stronger conviction.\n        </p>\n        <p>\n          \"Nothing is stronger than imagination,\" thought the boy.\n        </p>\n        <p>\n          But as you may know, insufferable sands will ignore all bastions. The boy sought \n          the source of his world's defiance, and made haste away from his world. To stop the great \n          menace, and return triumphant to an imagined world free in its pursuit of peace and joy.\n        </p>\n        <p>\n          But we are familiar with how this story goes. The boy's world fell dormant under the \n          weight of his absence.\n        </p>\n      </section>\n    </section>\n  </section>\n</section>\n"
 },{})
