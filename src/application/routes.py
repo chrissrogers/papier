@@ -24,10 +24,6 @@ else:
   # Home page
   app.add_url_rule('/', 'home', view_func = views.home)
 
-  # Contrived admin-only view example
-  app.add_url_rule('/admin_only', 'admin_only', view_func = views.admin_only)
-
-
 
   ## Error handlers
   # Handle 404 errors
