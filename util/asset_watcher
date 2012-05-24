@@ -23,15 +23,15 @@ then
     exit 1;
   }
 
-  cd $base_path"/src/etherous/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l&
+  cd $base_path"/src/application/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l&
   echo `ps aux | grep -F 'lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid;
   disown $!;
 
-  cd $base_path"/src/etherous/" && lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js&
+  cd $base_path"/src/application/" && lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js&
   echo `ps aux | grep -F 'lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid;
   disown $!;
 
-  cd $base_path"/src/etherous/assets/scss/" && compass watch&
+  cd $base_path"/src/application/assets/scss/" && compass watch&
   echo `ps aux | grep -F 'compass watch' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid;
   disown $!;
 

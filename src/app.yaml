@@ -1,5 +1,5 @@
-application: etherous-app
-version: 0-african-wild-ass
+application: papier-api
+version: 0.african-wild-ass
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -20,23 +20,23 @@ inbound_services:
 
 handlers:
 - url: /assets
-  static_dir: etherous/static/assets
+  static_dir: application/static/assets
 
 - url: /favicon.ico
-  static_files: etherous/static/assets/img/icons/favicon.ico
-  upload: etherous/static/assets/img/icons/favicon.ico
+  static_files: application/static/assets/img/icons/favicon.ico
+  upload: application/static/assets/img/icons/favicon.ico
 
 - url: /crossdomain.xml
-  static_files: etherous/static/crossdomain.xml
-  upload: etherous/static/crossdomain.xml
+  static_files: application/static/crossdomain.xml
+  upload: application/static/crossdomain.xml
 
 - url: /humans.txt
-  static_files: etherous/static/humans.txt
-  upload: etherous/static/humans.txt
+  static_files: application/static/humans.txt
+  upload: application/static/humans.txt
 
 - url: /robots.txt
-  static_files: etherous/static/robots.txt
-  upload: etherous/static/robots.txt
+  static_files: application/static/robots.txt
+  upload: application/static/robots.txt
 
 - url: .*
   script: engine.app

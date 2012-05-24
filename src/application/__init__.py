@@ -6,7 +6,7 @@ from flask import Flask
 
 import config as app_config
 
-app = Flask('etherous')
+app = Flask('application')
 app.config.from_object(app_config)
 
 # import environments

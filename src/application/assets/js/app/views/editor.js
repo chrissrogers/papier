@@ -1,7 +1,7 @@
-
-etherous.EditorView = Ember.View.create({
+  
+papier.EditorView = Ember.View.create({
   template: Ember.Handlebars.compile(require('template-editor')),
-  president: etherous.president.name,
+  president: papier.president.name,
   mouseDown: function () {
     window.alert("Editor");
   }

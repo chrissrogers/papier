@@ -6,8 +6,8 @@
 
 from flask import render_template
 
-from etherous import app
-from etherous import views
+from application import app
+from application import views
 
 
 if not app.config['DEBUG']:

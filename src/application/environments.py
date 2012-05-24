@@ -5,7 +5,7 @@
 """
 
 from flask import request
-from etherous import app
+from application import app
 
 if app.config['DEBUG']:
   app.config['ENVIRONMENT'] = 'development-local'
