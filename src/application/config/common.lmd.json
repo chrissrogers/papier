@@ -4,7 +4,7 @@
     
     "underscore": "lib/underscore.js",
     "ember": {
-      "path": "lib/ember-0.9.7.1.js",
+      "path": "lib/ember-0.9.8.1.min.js",
       "lazy": false
     },
 
