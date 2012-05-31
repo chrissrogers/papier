@@ -2,3 +2,4 @@ secret_keys.py
 *.pyc
 .sass-cache
 src/application/static/assets/js/application.js
+src/application/static/assets/js/application.dev.js
