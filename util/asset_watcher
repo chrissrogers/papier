@@ -23,8 +23,8 @@ then
     exit 1;
   }
 
-  cd $base_path"/src/application/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l&
-  echo `ps aux | grep -F 'lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid;
+  cd $base_path"/src/application/" && lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l -no-w&
+  echo `ps aux | grep -F 'lmd -m watch -c config/development.lmd.json -o static/assets/js/application.dev.js -l -no-w' | grep -v -F 'grep' | awk '{ print $2 }'` >> /tmp/asset_watcher_procs.pid;
   disown $!;
 
   cd $base_path"/src/application/" && lmd -m watch -c config/production.lmd.json -o static/assets/js/application.js&

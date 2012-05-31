@@ -1,5 +1,7 @@
 {
   "extends": "./common.lmd.json",
   "lazy": true,
-  "pack": true
+  "pack": true,
+  "cache": true,
+  "version": 0
 }
