@@ -1,6 +1,7 @@
 (function (require) {
 
   require('ember');
+  require('jquery-animateenhanced');
 
   papier = Em.Application.create();
 
@@ -11,7 +12,7 @@
 
   require('view-editor');
   require('view-welcome');
-  
+
   papier.EditorView.append();
   papier.WelcomeView.append();
 
