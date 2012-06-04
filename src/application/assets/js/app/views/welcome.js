@@ -2,11 +2,14 @@
 papier.WelcomeView = Ember.View.create({
   
   template: Ember.Handlebars.compile(require('template-welcome')),
-
+  id: 'view-welcome',
+    
   launchEditor: function (event) {
+    var view = event.view;
 
-    $(this).css('border', '10px solid red');
+    require('jquery-pushdown');
 
+    view.$().pushDown();
   }
 
 });
