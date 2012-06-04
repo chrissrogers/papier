@@ -22,7 +22,7 @@
           padding: 0
         }),
         animateOptions = $.extend({
-          duration: 1600,
+          duration: 2000,
           easing: 'easeInOutQuad'
         }, typeof action === 'object' ? action : animateOptions),
         action = typeof action === 'string' && /hide|show/.test(action)
