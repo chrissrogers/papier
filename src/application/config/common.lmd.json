@@ -7,6 +7,7 @@
       "path": "lib/ember-0.9.8.1.min.js",
       "lazy": false
     },
+    "jquery-*": "lib/jquery.*.js",
 
     "app": "app/app.js",
     "view-*": "app/views/*.js",
