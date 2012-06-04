@@ -7,7 +7,6 @@
 //
 //  2012-06-01 - 1.0 - Initial release
 //
-//
  
 (function($) {
  
@@ -22,26 +21,27 @@
           margin: 0,
           padding: 0
         }),
-        animateOptions = typeof action === 'object'
+        animateOptions = $.extend({
+          duration: 1600,
+          easing: 'easeInOutQuad'
+        }, typeof action === 'object' ? action : animateOptions),
+        action = typeof action === 'string' && /hide|show/.test(action)
           ? action
-          : animateOptions;
-
-    element.wrap(wrapper);
+          : 'hide';
 
     // we need to have a properly mutable position property
     if (!positionRegex.test(elementPosition))
       element.css({ position: 'relative' });
 
     element
+      .show()
+      .wrap(wrapper)
       .animate({
-        bottom: -element.height()
-      }, $.extend({
-        duration: 1600,
-        easing: 'easeInOutQuad'
-      }, animateOptions, {
+        bottom: action === 'hide' ? -element.height() : 0
+      }, $.extend(animateOptions, {
         complete: function () {
           element
-            .hide()
+            [action]()
             .unwrap();
 
           if (!positionRegex.test(elementPosition))
