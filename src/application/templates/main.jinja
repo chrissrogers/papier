@@ -2,8 +2,17 @@
 
   {% block title %}papier{% endblock %}
 
+  {% block head %}
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  {% endblock %}
+
+
   {% block content %}
 
-    <section id="main"></section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+  <script src="/assets/js/application{% if config.DEBUG %}.dev{% endif %}.js"></script>
 
   {% endblock %}

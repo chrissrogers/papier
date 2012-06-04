@@ -12,8 +12,8 @@
   require('view-editor');
   require('view-welcome');
   
-  papier.EditorView.appendTo('#main');
-  papier.WelcomeView.appendTo('#main');
+  papier.EditorView.append();
+  papier.WelcomeView.append();
 
   return papier;
 
