@@ -5,11 +5,13 @@ papier.WelcomeView = Ember.View.create({
   id: 'view-welcome',
     
   launchEditor: function (event) {
+
     var view = event.view;
 
     require('jquery-pushdown');
 
-    view.$().pushDown();
+    view.$().pushDown('hide');
+
   }
 
 });
