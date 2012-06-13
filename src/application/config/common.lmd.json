@@ -2,15 +2,17 @@
   "path": "../assets/js/",
   "modules": {
     
-    "underscore": "lib/underscore.js",
-    "underscore-*": "lib/underscore.*.js",
-    "jquery-*": "lib/jquery.*.js",
     "ember": {
-      "path": "lib/ember-0.9.8.1.min.js",
+      "path": "lib/ember-latest.js",
       "lazy": false
     },
+    "handlebars": "lib/handlebars-1.0.0.beta.6.amd.js",
+    "underscore": "lib/underscore.js",
+    "ember-*": "lib/ember.*.js",
+    "underscore-*": "lib/underscore.*.js",
+    "jquery-*": "lib/jquery.*.js",
 
-    "app": "app/app.js",
+    "*": "app/*.js",
     "view-*": "app/views/*.js",
     "template-*": "app/templates/*.hbs",
 

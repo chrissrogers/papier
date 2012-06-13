@@ -1,21 +1,15 @@
 (function (require) {
 
-  require('ember');
-  require('jquery-animateenhanced');
+  // create the application
+  var papier = Em.Application.create();
 
-  papier = Em.Application.create();
+  papier.router = require('routes');
 
-  // Model testing
+  // testing some model data
   papier.president = Ember.Object.create({
     name: "Barack Obama"
   });
 
-  require('view-editor');
-  require('view-welcome');
-
-  papier.EditorView.append();
-  papier.WelcomeView.append();
-
-  return papier;
+  window.papier = papier;
 
 })

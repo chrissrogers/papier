@@ -1,5 +1,15 @@
 (function (require) {
+
+  // applicaiton dependencies
+  require('underscore')
+  require('handlebars')
+  require('ember')
   
-  require('app');
+  // application
+  require('app')
+
+  // ui dependencies
+  require('jquery-animateenhanced')
+  require('jquery-pushdown')
 
 })

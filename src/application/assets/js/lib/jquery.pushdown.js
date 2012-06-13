@@ -15,6 +15,7 @@
     var element = $(this),
         elementPosition = element.data('pushDown.origPosition') || element.css('position'),
         positionRegex = /absolute|relative/,
+        callback = function () {},
         wrapper = $('<div class="_jq-pushDown-wrapper" />').css({
           position: 'absolute',
           overflow: 'hidden',
@@ -48,6 +49,10 @@
     if (!element.parent('._jq-pushDown-wrapper').length)
       element.wrap(wrapper);
 
+    if (typeof animateOptions.complete === 'function') {
+      callback = animateOptions.complete;
+    }
+
     element
       .show()
       .animate({
@@ -64,6 +69,7 @@
             if (!positionRegex.test(elementPosition))
               element.css({ position: elementPosition });
 
+            callback();
           }
         }
       }));

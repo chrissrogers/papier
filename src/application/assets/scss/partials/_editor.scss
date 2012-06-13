@@ -1,3 +1,8 @@
+.view-editor {
+  position: relative;
+  z-index: 100;
+}
+
 #editor {
   background: url('/assets/img/editor-bg-linen.jpg') top left repeat #F4F2F0;
   position: absolute;
