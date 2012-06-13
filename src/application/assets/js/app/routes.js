@@ -1,22 +1,15 @@
 (function (require) {
 
-  var _ = require('underscore');
-
   // define states
   return Em.Router.extend({
-    
-    rootElement: 'body',
+
+    location: 'hash',
+
+    enableLogging: true,
 
     root: Em.State.extend({
-
-      index: _.extend(require('view-welcome'), {
-        route: '/'
-      }),
-
-      editor: _.extend(require('view-editor'), {
-        route: '/write'
-      })
-
+      index: require('state-editor'),
+      welcome: require('state-welcome')
     })
 
   });

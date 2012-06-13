@@ -1,15 +1,26 @@
 (function (require) {
 
   // create the application
-  var papier = Em.Application.create();
-
-  papier.router = require('routes');
+  var Papier = Em.Application.create();
 
   // testing some model data
-  papier.president = Ember.Object.create({
+  Papier.president = Ember.Object.create({
     name: "Barack Obama"
   });
 
-  window.papier = papier;
+  Papier.ApplicationController = Em.Controller.extend({});
+  Papier.ApplicationView = require('view-application');
+
+  Papier.EditorController = Em.Controller.extend({});
+  Papier.EditorView = require('view-editor');
+
+  Papier.WelcomeController = Em.Controller.extend({});
+  Papier.WelcomeView = require('view-welcome');
+
+  Papier.Router = require('routes');
+
+  window.Papier = Papier;
+
+  Papier.initialize();
 
 })

@@ -13,6 +13,7 @@
     "jquery-*": "lib/jquery.*.js",
 
     "*": "app/*.js",
+    "state-*": "app/states/*.js",
     "view-*": "app/views/*.js",
     "template-*": "app/templates/*.hbs",
 
