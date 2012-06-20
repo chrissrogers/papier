@@ -30,3 +30,7 @@ a {
     border-bottom: 1px solid #C1B6B9;
   }
 }
+
+._jq-pushDown-mover {
+  @include box-shadow(0 0 40px #C1B6B9);
+}

@@ -2,7 +2,7 @@
 
   return Em.View.extend({
 
-    template: Ember.Handlebars.compile(require('template-application'))
+    template: Em.Handlebars.compile(require('template-application'))
 
   });
 

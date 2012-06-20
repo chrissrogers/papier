@@ -11,7 +11,10 @@
     },
 
     // events
+
     launchWelcome: Em.State.transitionTo('welcome'),
+
+    // state transitions
 
     enter: function (manager, transition) {
       this._super(manager, transition);

@@ -2,7 +2,7 @@
 
   return Em.State.extend({
 
-    route: '/hi',
+    route: '/hello',
 
     // references for this state's active views
     activeViews: {},
@@ -15,15 +15,11 @@
       this.activeViews.welcome = appController.connectOutlet('secondary', Papier.WelcomeView);
     },
 
-    //
     // events
-    //
 
     launchEditor: Em.State.transitionTo('index'),
 
-    //
     // state transitions
-    //     
 
     enter: function (manager, transition) {
       this._super(manager, transition);
@@ -35,9 +31,11 @@
           viewNode = this.activeViews.welcome.$();
 
       // custom pushDown animation
-      viewNode.pushDown(200, {
+      viewNode.pushDown('hide', {
+        duration: 3000,
         complete: function () {
-          // viewNode.remove();
+          viewNode.fadeOut();
+
           stateSuper(manager, transition);
         }
       });

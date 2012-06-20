@@ -1,11 +1,11 @@
 .view-welcome {
-  position: relative;
   z-index: 200;
 }
 
 #welcome {
   background: #F4F2F0;
   position: relative;
+  z-index: 200;
   section.tophat {
     @include FellGreatPrimer;
     position: relative;

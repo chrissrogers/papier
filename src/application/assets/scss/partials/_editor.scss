@@ -1,13 +1,31 @@
 .view-editor {
-  position: relative;
-  z-index: 100;
 }
 
-#editor {
+#editor-container {
   background: url('/assets/img/editor-bg-linen.jpg') top left repeat #F4F2F0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+#editor {
+  width: 950px;
+  height: 100%;
+  margin: 0 auto;
+  outline: none;
+  text-align: left;
+
+  @include FellGreatPrimer;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+#editor-body {
+  &:focus {
+    outline: none;
+  }
 }

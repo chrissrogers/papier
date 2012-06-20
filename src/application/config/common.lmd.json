@@ -6,8 +6,11 @@
       "path": "lib/ember-latest.js",
       "lazy": false
     },
+    
     "handlebars": "lib/handlebars-1.0.0.beta.6.amd.js",
     "underscore": "lib/underscore.js",
+    "rangy": "lib/rangy-core.js",
+
     "ember-*": "lib/ember.*.js",
     "underscore-*": "lib/underscore.*.js",
     "jquery-*": "lib/jquery.*.js",
