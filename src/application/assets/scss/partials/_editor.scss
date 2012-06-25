@@ -22,6 +22,19 @@
   @include FellGreatPrimer;
   font-size: 18px;
   line-height: 1.8em;
+
+  ._js-selection-anchor {
+    position: relative;
+
+    menu {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      background: red;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 #editor-body {

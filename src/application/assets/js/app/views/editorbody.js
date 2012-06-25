@@ -19,40 +19,38 @@
     // event handlers
 
     pollMenuDisplay: function (event) {
-      var selectionID = 'selection-tmp-' + Math.floor(Math.random() * 1000000000)
-          selection = rangy.getSelection(),
-          range = selection.getRangeAt(0),
-          node = $('<span id="' + selectionID + '" />')
-            .css({
-              position: 'relative'
-            })[0],
+      var selection = rangy.getSelection(),
           view = this;
 
-      $(document).one('mousedown keyup', function () {
-        view.fire('clearSelectionNodes');
+      // destroy any existant menus next time we use the keyboard or mouse
+      $(document).on('mousedown.papiermenu keydown.papiermenu', function (event) {
+        var _ = require('underscore'),
+            isModifierKey = _.indexOf(Papier.Constants.MODIFIER_KEY_CHAR_CODES, event.which) > -1;
+
+        // only fire on mouse events and non-modifier keys
+        if (event.type === 'mousedown' || !isModifierKey) {
+          view.fire('clearSelectionNodes');
+          $(this).off('mousedown.papiermenu keydown.papiermenu');
+        }
       });
 
-      if (range.toString()) {
+      if (selection.toString()) {
+
+        var range = selection.getRangeAt(0),
+            node = $('<span class="_js-selection-anchor" />')[0];
+
         // place a reference node after the selection
         range.insertNodeAtEnd(node);
 
         // attach the menu to the reference node
-        $('<menu />')
-          .css({
-            position: 'absolute',
-            background: 'red',
-            width: '20px',
-            height: '20px',
-            top: 0,
-            left: 0
-          })
-          .appendTo(node);
+        $('<menu />').appendTo(node);
+
       }
     },
 
     clearSelectionNodes: function (event) {
       
-      this.$('span[id|="selection-tmp"]').remove();
+      this.$('span._js-selection-anchor').remove();
 
     }
 
