@@ -5,6 +5,7 @@
   require('handlebars')
   require('ember')
   require('rangy')
+  require('rangy-prototypeextensions')
   
   // application
   require('app')

@@ -16,15 +16,44 @@
         this.fire('pollMenuDisplay', event);
     },
 
+    // event handlers
+
     pollMenuDisplay: function (event) {
       var selectionID = 'selection-tmp-' + Math.floor(Math.random() * 1000000000)
           selection = rangy.getSelection(),
           range = selection.getRangeAt(0),
-          node = $('<span id="' + selectionID + '" />')[0];
+          node = $('<span id="' + selectionID + '" />')
+            .css({
+              position: 'relative'
+            })[0],
+          view = this;
 
-      console.log(selection, selection.getRangeAt(0));
+      $(document).one('mousedown keyup', function () {
+        view.fire('clearSelectionNodes');
+      });
 
-      range.surroundContents(node);
+      if (range.toString()) {
+        // place a reference node after the selection
+        range.insertNodeAtEnd(node);
+
+        // attach the menu to the reference node
+        $('<menu />')
+          .css({
+            position: 'absolute',
+            background: 'red',
+            width: '20px',
+            height: '20px',
+            top: 0,
+            left: 0
+          })
+          .appendTo(node);
+      }
+    },
+
+    clearSelectionNodes: function (event) {
+      
+      this.$('span[id|="selection-tmp"]').remove();
+
     }
 
   });

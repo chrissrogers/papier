@@ -9,10 +9,11 @@
     
     "handlebars": "lib/handlebars-1.0.0.beta.6.amd.js",
     "underscore": "lib/underscore.js",
-    "rangy": "lib/rangy-core.js",
+    "rangy": "lib/rangy.js",
 
     "ember-*": "lib/ember.*.js",
     "underscore-*": "lib/underscore.*.js",
+    "rangy-*": "lib/rangy.*.js",
     "jquery-*": "lib/jquery.*.js",
 
     "*": "app/*.js",
