@@ -1,59 +1,99 @@
 (function (require) {
 
-  return Em.View.extend({
+  return {
 
-    template: Em.Handlebars.compile(require('template-editorbody')),
+    EditorBodyController: Em.Controller.extend({}),
 
-    // events
+    EditorBodyView: Em.View.extend({
 
-    mouseUp: function (event) {
-      this.fire('pollMenuDisplay', event);
-    },
+      template: Em.Handlebars.compile(require('template-editorbody')),
 
-    keyUp: function (event) {
-      // only poll if an arrow key is pressed, hinting that a selection may have been made
-      if (event.which >= 37 && event.which <= 40)
-        this.fire('pollMenuDisplay', event);
-    },
+      activeSelection: '',
 
-    // event handlers
+      // events
 
-    pollMenuDisplay: function (event) {
-      var selection = rangy.getSelection(),
-          view = this;
+      mouseUp: function (event) {
+        var view = this;
 
-      // destroy any existant menus next time we use the keyboard or mouse
-      $(document).on('mousedown.papiermenu keydown.papiermenu', function (event) {
-        var _ = require('underscore'),
-            isModifierKey = _.indexOf(Papier.Constants.MODIFIER_KEY_CHAR_CODES, event.which) > -1;
-
-        // only fire on mouse events and non-modifier keys
-        if (event.type === 'mousedown' || !isModifierKey) {
-          view.fire('clearSelectionNodes');
-          $(this).off('mousedown.papiermenu keydown.papiermenu');
+        // if we have a selection, allow a delay to account for clicks within already-selected text
+        // (behavior in that case results in a deselection)
+        if (this.activeSelection.toString()) {
+          setTimeout(function () {
+            view.fire('checkForSelection', event);
+          }, 1);
+        } else {
+          view.fire('checkForSelection', event);
         }
-      });
 
-      if (selection.toString()) {
+      },
 
-        var range = selection.getRangeAt(0),
-            node = $('<span class="_js-selection-anchor" />')[0];
+      keyUp: function (event) {
+        // only poll if an arrow key is pressed, hinting that a selection may have been made
+        if (event.which > 37 && event.which <= 40)
+          this.fire('checkForSelection', event);
+      },
 
-        // place a reference node after the selection
-        range.insertNodeAtEnd(node);
+      // event handlers
 
-        // attach the menu to the reference node
-        $('<menu />').appendTo(node);
+      checkForSelection: function (event) {
+        
+        var _ = require('underscore'),
+            selection = rangy.getSelection(),
+            view = this;
+
+        // destroy any existant menus next time we use the keyboard or mouse
+        $(document).on('mousedown.papiermenu keydown.papiermenu', function (event) {
+          
+          var isModifierKey = event.type === 'keydown'
+                ? _.indexOf(Papier.Constants.MODIFIER_KEY_CHAR_CODES, event.which) > -1
+                : false;
+
+          // only fire on mouse events and non-modifier keys
+          if (event.type === 'mousedown' || !isModifierKey) {
+            view.fire('hideSelectionMenu');
+
+            // decouple the event after we destroy menu reference nodes
+            $(this).off('mousedown.papiermenu keydown.papiermenu');
+          }
+
+        });
+
+        if (selection.toString()) {
+
+          var range = selection.getRangeAt(0),
+              referenceNode = $('<span class="_js-selection-reference" />'),
+              selectionMenu = $('#editor-selection-menu');
+
+          // place a reference node after the selection
+          range.insertNodeAtEnd(referenceNode[0]);
+
+          // set the menu offset to the reference node's offset
+          var offset = referenceNode.offset();
+
+          selectionMenu
+            .css({
+              left: offset.left,
+              top: offset.top
+            })
+            .fadeIn(50);
+
+          this.activeSelection = selection;
+
+        }
+      },
+
+      hideSelectionMenu: function (event) {
+
+        var selectionMenu = this.get('parentView').$().find('#editor-selection-menu'),
+            referenceNodes = this.$('span._js-selection-reference')
+        
+        selectionMenu.fadeOut(50);
+        referenceNodes.remove();
 
       }
-    },
 
-    clearSelectionNodes: function (event) {
-      
-      this.$('span._js-selection-anchor').remove();
-
-    }
-
-  });
+    })
+  
+  };
 
 })

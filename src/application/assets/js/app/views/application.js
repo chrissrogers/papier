@@ -1,9 +1,15 @@
 (function (require) {
 
-  return Em.View.extend({
+  return {
+    
+    ApplicationController: Em.Controller.extend({}),
 
-    template: Em.Handlebars.compile(require('template-application'))
+    ApplicationView: Em.View.extend({
 
-  });
+      template: Em.Handlebars.compile(require('template-application'))
+
+    })
+
+  };
 
 })

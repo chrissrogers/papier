@@ -1,11 +1,17 @@
 (function (require) {
 
-  return Em.View.extend({
+  return {
 
-    template: Em.Handlebars.compile(require('template-welcome')),
+    WelcomeController: Em.Controller.extend({}),
 
-    classNames: ['view-welcome']
-
-  });
+    WelcomeView: Em.View.extend({
+  
+      template: Em.Handlebars.compile(require('template-welcome')),
+  
+      classNames: ['view-welcome']
+  
+    })
+  
+  };
 
 })

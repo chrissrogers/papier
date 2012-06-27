@@ -23,7 +23,20 @@
   font-size: 18px;
   line-height: 1.8em;
 
-  ._js-selection-anchor {
+  #editor-selection-menu {
+    position: absolute;
+    display: none;
+    background: white;
+    margin: 1em 0 0;
+    padding: 2px 6px;
+    box-shadow: 5px 5px 15px #ccc;
+    border-radius: 0 15px 15px 15px;
+    a {
+      border: none;
+    }
+  }
+
+  ._js-selection-reference {
     position: relative;
 
     menu {

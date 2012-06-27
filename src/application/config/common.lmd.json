@@ -17,6 +17,7 @@
     "jquery-*": "lib/jquery.*.js",
 
     "*": "app/*.js",
+    "config-*": "app/config/*.js",
     "state-*": "app/states/*.js",
     "view-*": "app/views/*.js",
     "template-*": "app/templates/*.hbs",

@@ -14,6 +14,13 @@
 
     launchWelcome: Em.State.transitionTo('welcome'),
 
+
+    bold: function (event) {
+
+      document.execCommand('bold');
+
+    },
+
     // state transitions
 
     enter: function (manager, transition) {
