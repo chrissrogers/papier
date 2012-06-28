@@ -15,9 +15,20 @@
     launchWelcome: Em.State.transitionTo('welcome'),
 
 
-    bold: function (event) {
+    bold: function (router, event, t) {
 
       document.execCommand('bold');
+
+      var range = rangy.getSelection().getRangeAt(0),
+          isBold = range.isContianedBy({
+            tagNames: ['b', 'strong'],
+            cssProperties: {
+              fontWeight: 'bold'
+            },
+            until: '#editor-body'
+          });
+
+      $('#editor-selection-menu-button-bold').css('fontWeight', isBold ? 'bold' : 'normal');
 
     },
 

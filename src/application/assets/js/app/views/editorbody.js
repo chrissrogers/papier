@@ -17,13 +17,9 @@
 
         // if we have a selection, allow a delay to account for clicks within already-selected text
         // (behavior in that case results in a deselection)
-        if (this.activeSelection.toString()) {
-          setTimeout(function () {
-            view.fire('checkForSelection', event);
-          }, 1);
-        } else {
+        setTimeout(function () {
           view.fire('checkForSelection', event);
-        }
+        }, 250);
 
       },
 
@@ -37,9 +33,30 @@
 
       checkForSelection: function (event) {
         
+        var selection = rangy.getSelection(),
+            range = selection.getRangeAt(0);
+
+        if (selection.toString())
+          this.fire('showSelectionMenu', selection, range);
+
+      },
+
+      showSelectionMenu: function (selection, range) {
+
         var _ = require('underscore'),
-            selection = rangy.getSelection(),
+            referenceNode = $('<span class="_js-selection-reference" />'),
+            selectionMenu = $('#editor-selection-menu'),
             view = this;
+
+        // place a reference node after the selection
+        range.insertNodeAtEnd(referenceNode[0]);
+
+        // set the menu offset to the reference node's offset
+        selectionMenu
+          .css(referenceNode.offset())
+          .fadeIn(50);
+
+        this.activeSelection = selection;
 
         // destroy any existant menus next time we use the keyboard or mouse
         $(document).on('mousedown.papiermenu keydown.papiermenu', function (event) {
@@ -58,28 +75,6 @@
 
         });
 
-        if (selection.toString()) {
-
-          var range = selection.getRangeAt(0),
-              referenceNode = $('<span class="_js-selection-reference" />'),
-              selectionMenu = $('#editor-selection-menu');
-
-          // place a reference node after the selection
-          range.insertNodeAtEnd(referenceNode[0]);
-
-          // set the menu offset to the reference node's offset
-          var offset = referenceNode.offset();
-
-          selectionMenu
-            .css({
-              left: offset.left,
-              top: offset.top
-            })
-            .fadeIn(50);
-
-          this.activeSelection = selection;
-
-        }
       },
 
       hideSelectionMenu: function (event) {
@@ -88,6 +83,7 @@
             referenceNodes = this.$('span._js-selection-reference')
         
         selectionMenu.fadeOut(50);
+
         referenceNodes.remove();
 
       }

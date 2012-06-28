@@ -11,9 +11,14 @@
 
     enableLogging: true,
 
-    root: Em.State.extend({
-      index: require('state-editor'),
-      welcome: require('state-welcome')
+    root: Em.Route.extend({
+      index: Ember.Route.extend({
+        route: '/'
+      }),
+      require('state-editor'),
+      welcome: Ember.Route.extend({
+        route: '/hi'
+      })require('state-welcome')
     })
 
   });

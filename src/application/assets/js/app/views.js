@@ -1,10 +1,8 @@
 (function (require) {
 
-  var _ = require('underscore');
+  // handles assignment of views to the main application object
 
-  // handles assignment of views to the main applicaiton object
-
-  return _.map([
+  return require('underscore').map([
     'application', 
     'editor', 
     'editorbody', 
