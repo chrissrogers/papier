@@ -12,7 +12,10 @@
       var appController = router.get('applicationController');
 
       // appController.connectOutlet('primary', Papier.EditorView);
-      this.activeViews.welcome = appController.connectOutlet('secondary', Papier.WelcomeView);
+      this.activeViews.welcome = appController.connectOutlet({
+        outletName: 'secondary',
+        name: 'welcome'
+      });
     },
 
     // events

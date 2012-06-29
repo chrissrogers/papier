@@ -37,7 +37,7 @@
         // if we have a selection, allow a delay to account for clicks within already-selected text
         // (behavior in that case results in a deselection)
         setTimeout(function () {
-          view.fire('checkForSelection', event);
+          view.trigger('checkForSelection', event);
         }, 250);
 
       },
@@ -45,7 +45,7 @@
       keyUp: function (event) {
         // only poll if an arrow key is pressed, hinting that a selection may have been made
         if (event.which > 37 && event.which <= 40)
-          this.fire('checkForSelection', event);
+          this.trigger('checkForSelection', event);
       },
 
       // event handlers
@@ -56,7 +56,7 @@
             range = selection.getRangeAt(0);
 
         if (selection.toString())
-          this.fire('showSelectionMenu', selection, range);
+          this.trigger('showSelectionMenu', selection, range);
 
       },
 
