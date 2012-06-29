@@ -1,6 +1,6 @@
 (function (require) {
 
-  return Em.State.extend({
+  return Em.Route.extend({
 
     route: '/',
 
