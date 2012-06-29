@@ -7,7 +7,7 @@
 
   Papier.Constants = require('config-constants');
 
-  _.extend.apply(this, [Papier].concat(require('views')));
+  _.extend(Papier, require('views'));
 
   // append the router
   Papier.Router = require('routes');

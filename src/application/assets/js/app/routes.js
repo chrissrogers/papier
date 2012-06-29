@@ -7,8 +7,6 @@
 
   return Em.Router.extend({
 
-    location: 'hash',
-
     enableLogging: true,
 
     root: Em.Route.extend({

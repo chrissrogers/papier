@@ -7,12 +7,11 @@
     connectOutlets: function(router, context) {
       var appController = router.get('applicationController');
 
-      appController.connectOutlet('primary', Papier.EditorView);
+      appController.connectOutlet({
+        name: 'editor',
+        outletName: 'primary'
+      });
     },
-
-    // events
-
-    launchWelcome: Em.State.transitionTo('welcome'),
 
     // state transitions
 
