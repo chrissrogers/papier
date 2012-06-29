@@ -1,6 +1,6 @@
-(function (require) {
-  
-   _ = require('underscore'),
+(function (require, a, b) {
+
+  var _ = require('underscore'),
 
       // instantiate the application
       Papier = window.Papier = Em.Application.create();

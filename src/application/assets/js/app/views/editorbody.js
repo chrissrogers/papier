@@ -2,7 +2,26 @@
 
   return {
 
-    EditorBodyController: Em.Controller.extend({}),
+    EditorBodyController: Em.Controller.extend({
+
+      bold: function (router, event, t) {
+
+        document.execCommand('bold');
+
+        var range = rangy.getSelection().getRangeAt(0),
+            isBold = range.isContianedBy({
+              tagNames: ['b', 'strong'],
+              cssProperties: {
+                fontWeight: 'bold'
+              },
+              until: '#editor-body'
+            });
+
+        $('#editor-selection-menu-button-bold').css('fontWeight', isBold ? 'bold' : 'normal');
+
+      }
+
+    }),
 
     EditorBodyView: Em.View.extend({
 
@@ -32,7 +51,7 @@
       // event handlers
 
       checkForSelection: function (event) {
-        
+
         var selection = rangy.getSelection(),
             range = selection.getRangeAt(0);
 
@@ -60,7 +79,7 @@
 
         // destroy any existant menus next time we use the keyboard or mouse
         $(document).on('mousedown.papiermenu keydown.papiermenu', function (event) {
-          
+
           var isModifierKey = event.type === 'keydown'
                 ? _.indexOf(Papier.Constants.MODIFIER_KEY_CHAR_CODES, event.which) > -1
                 : false;
@@ -81,7 +100,7 @@
 
         var selectionMenu = this.get('parentView').$().find('#editor-selection-menu'),
             referenceNodes = this.$('span._js-selection-reference')
-        
+
         selectionMenu.fadeOut(50);
 
         referenceNodes.remove();
@@ -89,7 +108,7 @@
       }
 
     })
-  
+
   };
 
 })
