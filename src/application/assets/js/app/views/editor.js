@@ -2,11 +2,7 @@
 
   return {
   
-    EditorController: Em.Controller.extend({
-
-      launchWelcome: Em.State.transitionTo('welcome')
-
-    }),
+    EditorController: Em.Controller.extend({}),
 
     EditorView: Em.View.extend({
   

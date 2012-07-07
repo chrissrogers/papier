@@ -25,6 +25,8 @@
 
     // events
 
+    launchWelcome: Em.State.transitionTo('welcome'),
+
     bold: function (router, event) {
 
       document.execCommand('bold');
