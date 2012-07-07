@@ -13,8 +13,8 @@
 
       // appController.connectOutlet('primary', Papier.EditorView);
       this.activeViews.welcome = appController.connectOutlet({
-        outletName: 'secondary',
-        name: 'welcome'
+        name: 'welcome',
+        outletName: 'secondary'
       });
     },
 

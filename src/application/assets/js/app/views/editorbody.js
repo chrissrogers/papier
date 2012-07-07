@@ -2,26 +2,7 @@
 
   return {
 
-    EditorBodyController: Em.Controller.extend({
-
-      bold: function (router, event, t) {
-
-        document.execCommand('bold');
-
-        var range = rangy.getSelection().getRangeAt(0),
-            isBold = range.isContianedBy({
-              tagNames: ['b', 'strong'],
-              cssProperties: {
-                fontWeight: 'bold'
-              },
-              until: '#editor-body'
-            });
-
-        $('#editor-selection-menu-button-bold').css('fontWeight', isBold ? 'bold' : 'normal');
-
-      }
-
-    }),
+    EditorBodyController: Em.Controller.extend({}),
 
     EditorBodyView: Em.View.extend({
 
@@ -84,9 +65,9 @@
                 ? _.indexOf(Papier.Constants.MODIFIER_KEY_CHAR_CODES, event.which) > -1
                 : false;
 
-          // only fire on mouse events and non-modifier keys
+          // only trigger on mouse events and non-modifier keys
           if (event.type === 'mousedown' || !isModifierKey) {
-            view.fire('hideSelectionMenu');
+            view.trigger('hideSelectionMenu');
 
             // decouple the event after we destroy menu reference nodes
             $(this).off('mousedown.papiermenu keydown.papiermenu');
