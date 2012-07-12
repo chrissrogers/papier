@@ -1,5 +1,5 @@
-// Version: v0.9.8.1-574-ge616ab2
-// Last commit: e616ab2 (2012-07-11 02:31:59 -0700)
+// Version: v0.9.8.1-575-gf875767
+// Last commit: f875767 (2012-07-11 17:17:28 -0700)
 
 
 (function() {
@@ -142,8 +142,8 @@ window.ember_deprecateFunc  = Ember.deprecateFunc("ember_deprecateFunc is deprec
 
 })();
 
-// Version: v0.9.8.1-574-ge616ab2
-// Last commit: e616ab2 (2012-07-11 02:31:59 -0700)
+// Version: v0.9.8.1-575-gf875767
+// Last commit: f875767 (2012-07-11 17:17:28 -0700)
 
 
 (function() {
@@ -837,6 +837,8 @@ Ember.meta = function meta(obj, writable) {
     ret.descs.constructor = null;
 
   } else if (ret.source !== obj) {
+    if (!isDefinePropertySimulated) o_defineProperty(obj, META_KEY, META_DESC);
+
     ret = o_create(ret);
     ret.descs    = o_create(ret.descs);
     ret.watching = o_create(ret.watching);
@@ -19836,8 +19838,8 @@ Ember.$(document).ready(
 
 })();
 
-// Version: v0.9.8.1-574-ge616ab2
-// Last commit: e616ab2 (2012-07-11 02:31:59 -0700)
+// Version: v0.9.8.1-575-gf875767
+// Last commit: f875767 (2012-07-11 17:17:28 -0700)
 
 
 (function() {
