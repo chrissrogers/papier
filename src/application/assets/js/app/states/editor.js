@@ -23,7 +23,7 @@
       this._super(manager, transition);
     },
 
-    // events
+    // actions
 
     launchWelcome: Em.State.transitionTo('welcome'),
 

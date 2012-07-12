@@ -7,7 +7,7 @@
 
   return Em.Router.extend({
 
-    location: 'hash',
+    location: 'history',
 
     enableLogging: true,
 

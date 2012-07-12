@@ -22,7 +22,7 @@
         delta;
 
     // action may be 'hide', 'reset', or a number representing # of pixels to move
-    action = /^(hide|reset|\d+)$/.test(action) ? action : 'hide';
+    action = /^(hide|reset|-?\d+)$/.test(action) ? action : 'hide';
 
     animateOptions = $.extend({
       duration: 2000,
@@ -75,14 +75,14 @@
     mover
       .show()
       .animate({
-        bottom: -delta
+        bottom: -(delta)
       }, $.extend(animateOptions, {
         complete: function () {
 
           if (action === 'hide')
             mover.hide();
 
-          if (/hide|reset/.test(action) || parseInt(element.css('bottom'), 10) === 0) {
+          if (/hide|reset/.test(action) || parseInt(mover.css('bottom'), 10) === 0) {
 
             element.unwrap();
 
@@ -94,6 +94,8 @@
           completeCallback();
         }
       }));
+
+    return this;
  
   };
  

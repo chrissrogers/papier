@@ -18,10 +18,9 @@
   margin: 0 auto;
   outline: none;
   text-align: left;
-
-  @include FellGreatPrimer;
-  font-size: 18px;
-  line-height: 1.8em;
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.75em;
 
   #editor-selection-menu {
     position: absolute;
@@ -35,6 +34,10 @@
     a {
       border: none;
     }
+  }
+
+  #editor-body {
+    margin: 60px 0;
   }
 
   ._js-selection-reference {
