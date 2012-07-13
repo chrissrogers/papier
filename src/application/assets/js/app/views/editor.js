@@ -10,7 +10,9 @@
       
       classNames: ['view-editor'],
 
-      // events
+      /*
+        events
+      */
 
       mouseUp: function (event) {
         this.trigger('cursorPositionChange', event);
@@ -20,27 +22,40 @@
         this.trigger('cursorPositionChange', event);
       },
 
-      // event handlers
+      /*
+        event handlers
+      */
 
+      /** 
+       * detects state of user's cursor/selection, and delgates to behaviors
+       * that rely on certain cursor and selection conditions
+       */
       cursorPositionChange: function (event) {
 
-        var selection = rangy.getSelection()
+        var selection = rangy.getSelection();
 
-        // if something is selected, we show the slection menu
+        // Selection Menu
+        
         if (selection.toString())
           this.trigger('showSelectionMenu', selection);
         else
           this.trigger('hideSelectionMenu');
 
+        // Cosmetic Behaviors
+
+        if (selection.rangeCount)
+          this.trigger('highlightCurrentParagraph', selection);
+
       },
 
+      /**
+       * displays the selection context menu
+       */
       showSelectionMenu: function (selection) {
 
-        var _ = require('underscore'),
-            referenceNode = $('<span class="_js-selection-reference" />'),
+        var referenceNode = $('<span class="_js-selection-reference" />'),
             selectionMenu = $('#editor-selection-menu'),
-            range = selection.getRangeAt(0),
-            view = this;
+            range = selection.getRangeAt(0);
 
         // place a reference node after the selection
         range.insertNodeAtEnd(referenceNode[0]);
@@ -52,14 +67,36 @@
 
       },
 
-      hideSelectionMenu: function (event) {
+      /**
+       * hides the selection context menu and destroys all selection 
+       * reference nodes
+       */
+      hideSelectionMenu: function () {
 
-        var selectionMenu = this.$('#editor-selection-menu'),
-            referenceNodes = this.$('span._js-selection-reference')
+        var referenceNodes = this.$('span._js-selection-reference');
 
-        selectionMenu.fadeOut(50);
+        if (referenceNodes.length) {
+          
+          var selectionMenu = this.$('#editor-selection-menu');
 
-        referenceNodes.remove();
+          selectionMenu.fadeOut(50);
+          referenceNodes.remove();  
+
+        }
+
+      },
+
+      /**
+       * highlights paragraph containing the cursor and de-emphasizes others
+       */
+      highlightCurrentParagraph: function (selection) {
+
+        var paragraphs = this.$('p'),
+            currentParagraph = $(selection.focusNode).closest('p');
+
+        paragraphs.addClass('de-emphasized');
+
+        currentParagraph.removeClass('de-emphasized');
 
       }
   
