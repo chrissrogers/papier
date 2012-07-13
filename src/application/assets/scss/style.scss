@@ -1,36 +1,23 @@
 
+/*
+  modules
+*/
 @import 'compass/css3';
 @import 'modules/html5boilerplate';
 
-@include font-face('FellGreatPrimerRegular', font-files('/assets/fonts/imfegprm29p-webfont.eot', '/assets/fonts/imfegprm29p-webfont.eot?#iefix', '/assets/fonts/imfegprm29p-webfont.woff', '/assets/fonts/imfegprm29p-webfont.ttf', '/assets/css/fonts/imfegprm29p-webfont.svg#IMFELLGreatPrimerRegular'));
+/*
+  common application imports
+*/
 
-@mixin FellGreatPrimer {
-  font-family: 'FellGreatPrimerRegular', Georgia, serif;
-}
+@import 'application/variables';
+@import 'application/typefaces';
 
+/*
+  partials
+*/
+
+@import 'partials/common';
 @import 'partials/layouts';
-@import 'partials/ie';
+
 @import 'partials/editor';
 @import 'partials/welcome';
-
-::selection { background: #D7BF5E; color: #2B2124; text-shadow: none; }
-
-body {
-  background: #F4F2F0;
-  font-family: Georgia, serif;
-  color: #2B2124;
-}
-
-a {
-  color: #93737A;
-  border-bottom: 1px dashed #C1B6B9;
-  cursor: pointer;
-  &:hover {
-    color: #83555E;
-    border-bottom: 1px solid #C1B6B9;
-  }
-}
-
-._jq-pushDown-mover {
-  @include box-shadow(0 0 40px #C1B6B9);
-}

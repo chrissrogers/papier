@@ -1,0 +1,22 @@
+
+::selection { background: #D7BF5E; color: #2B2124; text-shadow: none; }
+
+body {
+  background: #F4F2F0;
+  font-family: Georgia, serif;
+  color: #2B2124;
+}
+
+a {
+  color: #93737A;
+  border-bottom: 1px dashed #C1B6B9;
+  cursor: pointer;
+  &:hover {
+    color: #83555E;
+    border-bottom: 1px solid #C1B6B9;
+  }
+}
+
+._jq-pushDown-mover {
+  @include box-shadow(0 0 40px #C1B6B9);
+}
