@@ -3,7 +3,7 @@
 }
 
 #welcome {
-  background: #F4F2F0;
+  background: $on-eggshells;
   position: relative;
   z-index: 200;
   section.tophat {
@@ -24,16 +24,16 @@
         text-align: right;
         padding: 28px 0 0;
         a {
-          color: #2B2124;
+          color: $chianti;
           font-size: 1.5em;
           text-decoration: none;
           border: none;
           margin: 0 24px 0 0;
           &.highlight {
             position: relative;
-            color: #D16344;
+            color: $butterscotch;
             &:hover {
-              border-bottom: 2px solid #D16344;
+              border-bottom: 2px solid $butterscotch;
               .icon-pen {
                 position: absolute;
                 top: -2px;
@@ -45,7 +45,7 @@
             }
           }
           &:hover {
-            border-bottom: 2px solid #2B2124;
+            border-bottom: 2px solid $chianti;
           }
         }
       }
@@ -56,11 +56,11 @@
         height: 6px;
         width: 20%;
       }
-      .color-1 { background: #F1E8B4; }
-      .color-2 { background: #B2BB91; }
-      .color-3 { background: #D7BF5E; }
-      .color-4 { background: #D16344; }
-      .color-5 { background: #83555E; }
+      .color-1 { background: $chopstick; }
+      .color-2 { background: $spanish-moss; }
+      .color-3 { background: $yellow-magnolia; }
+      .color-4 { background: $butterscotch; }
+      .color-5 { background: $ohio-buckeye; }
     }
     div.decoration {
       div.photo {
@@ -80,8 +80,8 @@
         }
         div.papier-is-easy {
           font-size: 3.5em;
-          color: #F4F2F0;
-          text-shadow: 1px 1px 1px #2B2124;
+          color: $near-white;
+          @include text-shadow(1px 1px 1px $chianti);
           margin: 80px 0 0;
           width: 450px;
         }

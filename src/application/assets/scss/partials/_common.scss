@@ -1,11 +1,14 @@
 
-::selection { background: #D7BF5E; color: #2B2124; text-shadow: none; }
+// TODO: finalize this
+::selection { background: #D7BF5E; color: $chianti; text-shadow: none; }
 
 body {
-  background: #F4F2F0;
+  background: $on-eggshells;
   font-family: Georgia, serif;
-  color: #2B2124;
+  color: $chianti;
 }
+
+// TODO: fix these colors, for clearly they aren't standard
 
 a {
   color: #93737A;

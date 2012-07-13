@@ -2,7 +2,7 @@
 }
 
 #editor-container {
-  background: #F4F2F0;
+  background: $on-eggshells;
   position: absolute;
   top: 0;
   left: 0;
@@ -42,11 +42,8 @@
     position: relative;
     z-index: 120;
 
-    p {
-      &.de-emphasized {
-        color: #BBB1B4;
-        text-shadow: 0 0 2px ;
-      }
+    .de-emphasized {
+      color: #BBB1B4;
     }
   }
 
