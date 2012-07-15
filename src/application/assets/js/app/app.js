@@ -1,4 +1,4 @@
-(function (require, a, b) {
+(function (require) {
 
   var _ = require('underscore'),
 
